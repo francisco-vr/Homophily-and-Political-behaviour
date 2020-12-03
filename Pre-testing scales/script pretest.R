@@ -4,7 +4,7 @@ library(tidyverse)
 library(dplyr)
 library(summarytools)
 
-pol <-read.csv("/home/debsuri/Documentos/results-survey536757.csv")
+pol <-read.csv("Pre-testing scales/results-survey536757.csv")
 
 ## MANEJO DE DATOS ##
 
@@ -136,8 +136,6 @@ pol <- mutate(pol, HomoRec = dplyr::recode(pol$HomoRec, "1" = "Homofilia baja",
 #selección de variables
 pol <-select(pol, sexo, pos_pol:esc_strate, esc_const:homo_valores, edad:HomoRec)
 
-save(pol, file = "")
-
 #Conteo de filas para calcular si es de izquierda o derecha
 
 PolitPos <-rowSums(pol[4:13], na.rm = T)
@@ -167,6 +165,11 @@ round((prop.table(tabla3)*100),2)
 ctable(pol$RL, pol$HomoRec, prop = "c", headings=FALSE, na.rm=T)
 ctable(pol$RL, pol$HomoRec, prop = "r", headings=FALSE, na.rm=T)
 ctable(pol$RL, pol$HomoRec, prop = "t", headings=FALSE, na.rm=T)
+
+#Guardado
+
+save(pol, file = "Pre-testing scales/pre-test.RData")
+
 
 
 
