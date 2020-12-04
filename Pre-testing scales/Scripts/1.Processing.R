@@ -188,3 +188,5 @@ rest <-DFscale[!ind, ]
 
 save(AFE, file = "Pre-testing scales/Data/Processing/AFE.RData")
 
+#Cleaning environment
+rm(list=ls())
