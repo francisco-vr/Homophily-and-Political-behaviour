@@ -178,9 +178,9 @@ save(DFscale, file = "Pre-testing scales/scale.RData")
 
 #Create randomized data frame with just 200 cases for EFA
 
-n <-299
-DFscale <- data.frame(x=runif(n), y=rnorm(n))
-ind <- sample(c(TRUE, FALSE), n, replace=TRUE, prob=c(0.71, 0.29))
+n <-200
+DFscale <- data.frame(DFscale)
+ind <- sample(c(TRUE, FALSE),n, replace = TRUE, prob = c(0.696,0.304))
 AFE <-DFscale[ind, ]
 rest <-DFscale[!ind, ]
 
