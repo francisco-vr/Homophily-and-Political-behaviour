@@ -378,15 +378,18 @@ summary {
 <h2>Descripción de escala</h2>
 <p>Esta escala está construída integramente por su autor, inspirado en distintas escalas de medición política proveniente de otras encuestas, peroa justadas a una realidad nacional compleja, muy dinámica y donde las posiciones políticas han sufrido numerosas modificaciones y las escalas más antiguas no podrían dar cuenta de la especificidad del momento. se probaron 11 ítemes en una esclaa de likert de 4 puntos con las opciones “Muy en desacuerdo”, “En desacuerdo”, “De acuerdo” y “Muy de acuerdo”. Se eligieron sólo 4 puntos y no 5 o 7 pues la finalidad de esta escala es poder clasificar políticamente a las personas para una posterior aleatorización, más que abarcar toda la variedad y complejidad política existente.</p>
 <p>La muiestra consiste en 299 encuestas, realizadas en una mezcla de método de bola de nieve y distintos mensajes en redes sociales (Principalmente Facebook) y que serán divididas en dos partes: una ṕrimera base de datos (nombre “AFE”) de 212 casos para el análisis factorial exploratorio y los test de prueba, y luego la base total (DFscale) CON 299 casos, que son los mismos 212 más casos restantes.</p>
+<pre><code>##          apa    apaTables  GPArotation        psych   parameters psychometric 
+##         TRUE         TRUE         TRUE         TRUE         TRUE         TRUE 
+##       lavaan     nFactors      semPlot          MVN     semTools 
+##         TRUE         TRUE         TRUE         TRUE         TRUE</code></pre>
 </div>
 <div id="test-de-prueba" class="section level2">
 <h2>Test de prueba</h2>
 <div id="test-de-correlaciones" class="section level3">
 <h3>Test de correlaciones</h3>
-<pre><code>##          apa    apaTables  GPArotation        psych   parameters psychometric 
-##         TRUE         TRUE         TRUE         TRUE         TRUE         TRUE 
-##       lavaan     nFactors      semPlot          MVN     semTools 
-##         TRUE         TRUE         TRUE         TRUE         TRUE</code></pre>
+<pre class="r"><code>load(file = &quot;Pre-testing scales/Data/Processing/AFE.RData&quot;)
+
+corr.test(AFE)</code></pre>
 <pre><code>## Call:corr.test(x = AFE)
 ## Correlation matrix 
 ##              esc_migra esc_abort esc_strate esc_const esc_rich esc_effort

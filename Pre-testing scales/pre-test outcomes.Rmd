@@ -22,15 +22,11 @@ Esta escala está construída integramente por su autor, inspirado en distintas 
 La muiestra consiste en 299 encuestas, realizadas en una mezcla de método de bola de nieve y distintos mensajes en redes sociales (Principalmente Facebook) y que serán divididas en dos partes: una ṕrimera base de datos (nombre "AFE")  de 212 casos para el análisis factorial exploratorio y los test de prueba, y luego la base total (DFscale) CON 299 casos, que son los mismos 212 más casos restantes.
 
 
-## Test de prueba
-
-### Test de correlaciones
-
 ```{r, echo=F, message=F}
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 ```
 
-```{r,echo=F,message=F}
+```{r,echo=F,message=F, warning=F}
 
 ipak <- function(pkg){
   new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
@@ -43,7 +39,12 @@ ipak <- function(pkg){
 packages <- c("apa","apaTables", "GPArotation","psych","parameters",
               "psychometric", "lavaan", "nFactors", "semPlot","MVN", "semTools")
 ipak(packages)
+```
 
+## Test de prueba
+
+### Test de correlaciones
+```{r}
 load(file = "Pre-testing scales/Data/Processing/AFE.RData")
 
 corr.test(AFE)
