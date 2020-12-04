@@ -170,6 +170,21 @@ ctable(pol$RL, pol$HomoRec, prop = "t", headings=FALSE, na.rm=T)
 
 save(pol, file = "Pre-testing scales/pre-test.RData")
 
+load(file = "Pre-testing scales/pre-test.RData")
 
+DFscale <-select(pol, esc_migra:esc_autorita)
 
+save(DFscale, file = "Pre-testing scales/scale.RData")
+
+#Create randomized data frame with just 200 cases for EFA
+
+n <-299
+DFscale <- data.frame(x=runif(n), y=rnorm(n))
+ind <- sample(c(TRUE, FALSE), n, replace=TRUE, prob=c(0.71, 0.29))
+AFE <-DFscale[ind, ]
+rest <-DFscale[!ind, ]
+
+#Save just de AFE Dataframe, cause the other DF to use is DFscale with all cases for CFA
+
+save(AFE, file = "Pre-testing scales/AFE.RData")
 
