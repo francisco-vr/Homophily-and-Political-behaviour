@@ -4,7 +4,7 @@ library(tidyverse)
 library(dplyr)
 library(summarytools)
 
-pol <-read.csv("Pre-testing scales/results-survey536757.csv")
+pol <-read.csv("Pre-testing scales/Data/Original Data/results-survey536757.csv")
 
 ## MANEJO DE DATOS ##
 
@@ -168,13 +168,13 @@ ctable(pol$RL, pol$HomoRec, prop = "t", headings=FALSE, na.rm=T)
 
 #Guardado
 
-save(pol, file = "Pre-testing scales/pre-test.RData")
+save(pol, file = "Pre-testing scales/Data/Processing/pre-test.RData")
 
-load(file = "Pre-testing scales/pre-test.RData")
+load(file = "Pre-testing scales/Data/Processing/pre-test.RData")
 
 DFscale <-select(pol, esc_migra:esc_autorita)
 
-save(DFscale, file = "Pre-testing scales/scale.RData")
+save(DFscale, file = "Pre-testing scales/Data/Processing/scale.RData")
 
 #Create randomized data frame with just 200 cases for EFA
 
@@ -186,5 +186,5 @@ rest <-DFscale[!ind, ]
 
 #Save just de AFE Dataframe, cause the other DF to use is DFscale with all cases for CFA
 
-save(AFE, file = "Pre-testing scales/AFE.RData")
+save(AFE, file = "Pre-testing scales/Data/Processing/AFE.RData")
 

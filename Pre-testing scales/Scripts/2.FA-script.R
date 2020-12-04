@@ -16,7 +16,7 @@ packages <- c("parameters","apa","haven","ggplot2","ggpubr","gridExtra","apaTabl
 ipak(packages)
 
 #load Data Frame
-load(file = "Pre-testing scales/AFE.RData")
+load(file = "Pre-testing scales/Data/Processing/AFE.RData")
 
 #KMO Test
 KMO(AFE)
@@ -38,7 +38,7 @@ print(ASIfactor,digits = 2,cut = .40,sort=TRUE)
 
 #load data frame with all cases
 
-load(file = "Pre-testing scales/scale.RData")
+load(file = "Pre-testing scales/Data/Processing/scale.RData")
 
 #CFA
 
