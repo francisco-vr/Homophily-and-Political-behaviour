@@ -1,0 +1,52 @@
+---
+title: "Outcomes Factorial analysis"
+author: "Francisco Villarroel"
+date: "04-12-2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Proceso de validación de escala de posición política
+
+En este documento daremos los principales resultados que arroja nuestro proceso de validación de escala de posición política, que será utilizada en nuestra encuesta experimental sobre la influencia de la homofilia y la posición política en las emociones en la esfera pública.
+
+El informe está distribuído en tres partes: 1)test previos para ver si la escala es suceptible de ser apta para un análisis factorial, 2) Análisis factorial exploratorio y 3) Análisis factorial confirmatorio.
+
+## Descrićión de escala
+
+Esta escala está construída integramente por su autor, inspirado en distintas escalas de medición política proveniente de otras encuestas, peroa justadas a una realidad nacional compleja, muy dinámica y donde las posiciones políticas han sufrido numerosas modificaciones y las escalas más antiguas no podrían dar cuenta de la especificidad del momento. se probaron 11 ítemes en una esclaa de likert de 4 puntos con las opciones "Muy en desacuerdo", "En desacuerdo", "De acuerdo" y "Muy de acuerdo". Se eligieron sólo 4 puntos y no 5 o 7 pues la finalidad de esta escala es poder clasificar políticamente a las personas para una posterior aleatorización, más que abarcar toda la variedad y complejidad política existente.
+
+La muiestra consiste en 299 encuestas, realizadas en una mezcla de método de bola de nieve y distintos mensajes en redes sociales (Principalmente Facebook) y que serán divididas en dos partes: una ṕrimera base de datos (nombre "AFE")  de 212 casos para el análisis factorial exploratorio y los test de prueba, y luego la base total (DFscale) CON 299 casos, que son los mismos 212 más casos restantes.
+
+
+## Test de prueba
+
+### Test de correlaciones
+
+```{r,message=F}
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+# usage
+packages <- c("apa","apaTables", "GPArotation","psych",
+              "psychometric", "lavaan", "nFactors", "semPlot","MVN", "semTools")
+ipak(packages)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
