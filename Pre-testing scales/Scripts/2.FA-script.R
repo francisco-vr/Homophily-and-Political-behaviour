@@ -67,9 +67,8 @@ summary(CFAone, fit.measures=TRUE)
 CFAtworele <- cfa(Twofactor,orthogonal=FALSE, data=DFscale, estimator="WLSMV",ordered =names(DFscale))
 summary(CFAtworele, fit.measures=TRUE)
 fitMeasures(CFAtworele)
-semPaths(CFAtworele, intercepts = FALSE,edge.label.cex=2.5, optimizeLatRes = TRUE, groups = "lat",
-         pastel = TRUE, exoVar = FALSE, sizeInt=5,edge.color ="black",esize = 6, label.prop=2,
-         sizeLat = 6,"std", layout="circle2")
-
+semPaths(CFAtworele, intercepts = FALSE,edge.label.cex=2, optimizeLatRes = TRUE,
+         groups = "lat",pastel = TRUE, exoVar = FALSE, sizeInt=5,edge.color ="black",esize = 6,
+         label.prop=1,sizeLat = 8,"std", layout="circle2")
 
 
