@@ -49,7 +49,7 @@ if(args[6] == "reset_database"){
 }
 
 #args <- as.vector(t(sim.data[i, ]))
-if(length(args) != 6){
+if(length(args) != 3){
   stop()
 }
 
@@ -57,24 +57,70 @@ if(length(args) != 6){
 #load(file="/var/www/r.cess.cl/public_html/sp/new.RData")
 load(file="new.RData")
 
-
-QID = args[6]
-
+QID = args[1]
 
 #### Data Management
 
-args<-C("Xvar1", "Xvar2", .....) #valor observado de todos 
+#Homofilia
+
+args<-c("Xvar1", "Xvar2", "Xvar3", "Xvar4", "Xvar5", "Xvar6", "Xvar7") #valor observado de todos 
 
 #valor observado de cada item
 digital1<-args[1]  
-digital2<-args[3]  
+digital2<-args[2]  
 digital3<-args[3]  
+digital4<-args[4]
+digital5<-args[5]
+digital6<-args[6]
+digital7<-args[7]
+digital8<-args[8]
+digital9<-args[9]
+digital10<-args[10]
+digital11<-args[11]
+digital12<-args[12]
+digital13<-args[13]
+digital14<-args[14]
+
+homofilia1<-args[15]
+homofilia2<-args[16] 
+homofilia3<-args[17]
+homofilia4<-args[18]
+homofilia5<-args[19]
+homofilia6<-args[20]
+homofilia7<-args[21]
+
+
+#Cambio de nombres en bdata
+
+names(bdata$orig) <-c("QID","DigiCit","HomoIndex","Tr")
+names(bdata$x) <-c("QID", "DigiCit","HomoIndex","Tr")
 
 
 #Cambiar de caracter a número
 
+args<-as.numeric(args)
+
 #### Funcion de agregar itemes
-sum<-digital1+digital2+digital3
+
+DigitCount <-digital1+digital2+digital3+digital4+digital5+digital6+digital7+digital8+digital9+digital10+digital11
++digital12+digital13+digital14
+
+DigiCit <-function(x){
+  if (DigitCount <= 56) {
+    0
+  } else {
+    1
+  }
+}
+
+
+HomoIndex <-function(x){
+  if (HomoCount <= 39) {
+    0
+  } else {
+    1
+  }
+}
 
 
 #producir un valor único por persona
@@ -94,8 +140,8 @@ if(sum(part.data$QID %in% QID)>0){
   # update the data.frame
   part.data <- rbind(part.data, 
                      data.frame(QID=args[6], 
-                                genderQ=as.numeric(args[1])+rnorm(1,sd=.001), #ciudadanía digital
-                                econQ=as.numeric(args[2])+rnorm(1,sd=.001))) # Homofilia
+                                DigitalCit=as.numeric(args[1])+rnorm(1,sd=.001), #ciudadanía digital
+                                HomoIndex=as.numeric(args[2])+rnorm(1,sd=.001))) # Homofilia
   # update the seqblock objects
   n.idx <- nrow(part.data)
   bdata <- seqblock2k(object.name = "bdata", 
@@ -202,3 +248,8 @@ length2<-fcn.opcion(gender, econ, pairvct[2], pair)
 #envio de datos a qualtrics
 to_qs<-c(pay.op1, pay.op2, selectedQID, length1, length2)
 cat(sprintf("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s", to_qs[1], to_qs[2], to_qs[3], to_qs[4], to_qs[5], to_qs[6], to_qs[7], to_qs[8], to_qs[9], to_qs[10], to_qs[11],to_qs[12], to_qs[13], to_qs[14], to_qs[15], to_qs[16], to_qs[17], to_qs[18], to_qs[19], to_qs[20], to_qs[21],to_qs[22], to_qs[23], to_qs[24], to_qs[25], to_qs[26], to_qs[27], to_qs[28], to_qs[29], to_qs[30], to_qs[31], to_qs[32], to_qs[33], to_qs[34]))
+
+
+
+
+

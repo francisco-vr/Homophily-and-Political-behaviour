@@ -133,6 +133,9 @@ pol <-data.frame(pol, homofilia)
 pol <- mutate(pol, HomoRec = car::recode(pol$homofilia, "1:25 = 1; 26:50 = 2"))
 pol <- mutate(pol, HomoRec = dplyr::recode(pol$HomoRec, "1" = "Homofilia baja",
                                            "2" = "Homofilia alta"))
+tablita <-table(pol$HomoRec)
+round((prop.table(tablita)*100),2)
+
 #selección de variables
 pol <-select(pol, sexo, pos_pol, esc_migra, esc_strate, esc_const:homo_valores, edad:HomoRec)
 
