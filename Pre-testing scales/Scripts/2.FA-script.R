@@ -11,8 +11,9 @@ ipak <- function(pkg){
 }
 
 # usage
-packages <- c("apa","apaTables", "GPArotation","psych",
-              "psychometric", "lavaan", "nFactors", "semPlot","MVN", "semTools")
+packages <- c("parameters","apa","haven","ggplot2","ggpubr","gridExtra","apaTables", "reshape",
+              "GPArotation", "mvtnorm", "psych", "psychometric", "lavaan", "nFactors", "semPlot",
+              "lavaan", "MVN", "semTools")
 ipak(packages)
 
 #load Data Frame
@@ -42,7 +43,7 @@ summary(results_nfactorASI)
 
 #Exploratory Factorial ANalysis ASI
 ASIfactor<-fa(AFE,nfactors = 2,fm = "ml",rotate ="Promax",cor = "poly")
-print(ASIfactor,digits = 2,cut = .40,sort=TRUE)
+print(ASIfactor,digits = 2,cut = .60,sort=TRUE)
 
 ## CONFIRMATORIAL FACTORYAL ANALYSIS ##
 
@@ -53,11 +54,11 @@ load(file = "Pre-testing scales/Data/Processing/scale.RData")
 #CFA
 
 #Especificación del modelo conceptual (primero unidimensional, luego bifactorial)
-Onefactor<-'Ideol =~ esc_migra + esc_abort + esc_strate + esc_const + esc_rich + esc_effort 
+Onefactor<-'Ideol =~ esc_migra + esc_strate + esc_const + esc_rich + esc_effort 
 + esc_afp + esc_policia + esc_mapuche + esc_autorita
 '
-Twofactor<-'Left =~ esc_rich + esc_strate + esc_afp + esc_const + esc_mapuche 
-Right =~ esc_policia + esc_autorita + esc_abort + esc_migra + esc_effort'
+Twofactor<-'Favor =~ esc_rich + esc_strate + esc_afp + esc_const + esc_mapuche 
+Contra =~ esc_policia + esc_autorita +esc_migra + esc_effort'
 
 #realización del AFC para la primera estructura
 CFAone <- cfa(Onefactor,orthogonal=FALSE, data=DFscale, estimator="WLSMV",ordered =names(DFscale))

@@ -134,15 +134,15 @@ pol <- mutate(pol, HomoRec = car::recode(pol$homofilia, "1:25 = 1; 26:50 = 2"))
 pol <- mutate(pol, HomoRec = dplyr::recode(pol$HomoRec, "1" = "Homofilia baja",
                                            "2" = "Homofilia alta"))
 #selección de variables
-pol <-select(pol, sexo, pos_pol:esc_strate, esc_const:homo_valores, edad:HomoRec)
+pol <-select(pol, sexo, pos_pol, esc_migra, esc_strate, esc_const:homo_valores, edad:HomoRec)
 
 #Conteo de filas para calcular si es de izquierda o derecha
 
-PolitPos <-rowSums(pol[4:13], na.rm = T)
+PolitPos <-rowSums(pol[3:11], na.rm = T)
 
 pol <-data.frame(pol, PolitPos)
 
-pol <-mutate(pol, RL = ifelse(PolitPos>21, "Derecha", "Izquierda"))
+pol <-mutate(pol, RL = ifelse(PolitPos>17, "Derecha", "Izquierda"))
 
 
 #calculo de posición política - auto representación
