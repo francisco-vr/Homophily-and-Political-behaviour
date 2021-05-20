@@ -65,7 +65,7 @@ CFAone <- cfa(Onefactor,orthogonal=FALSE, data=DFscale, estimator="WLSMV",ordere
 summary(CFAone, fit.measures=TRUE)
 
 #Análisis Factorial Confirmatorio para la segunda dimensionalidad.
-CFAtworele <- cfa(Twofactor,orthogonal=FALSE, data=DFscale, estimator="WLSMV",ordered =names(DFscale))
+CFAtworele <- cfa(Twofactor,orthogonal=TRUE, data=DFscale, estimator="WLSMV",ordered =names(DFscale))
 summary(CFAtworele, fit.measures=TRUE)
 fitMeasures(CFAtworele)
 semPaths(CFAtworele, intercepts =FALSE,edge.label.cex=2, optimizeLatRes = TRUE,

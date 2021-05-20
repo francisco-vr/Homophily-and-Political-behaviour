@@ -60,8 +60,8 @@ load(file="new.RData")
 
 #args <- c("QID35","4","6","2","3","2","10","8","7","7","4","6","3","7","4","7","7","7","5","5","6","7","7","5","4")
 #args <-c("QI35","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1")
-#args <-c("QI22","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1")
-args <-c("QI44","9","8","9","8","5","6","10","5","5","3","6","7","7","7","7","4","5","1","4","5","6","5","7","7")
+#args <-c("QI22","1","4","6",10","10","8","9","1","1","1","3","4","2","4","4","3","2","3","1","1","1","1","1","1")
+args <-c("45434","9","8","9","8","5","6","10","5","5","3","6","7","7","7","7","4","5","1","4","5","6","5","7","7")
 
 
 #ID
@@ -70,10 +70,12 @@ QID = args[1]
 
 #### Data Management
 
-#Cambio de nombres en bdata
+#Cambio de nombres en bdata y part.data
 
 names(bdata$orig) <-c("QID","DigiCit","HomoIndex","Tr")
 names(bdata$x) <-c("QID", "DigiCit","HomoIndex","Tr")
+
+names(part.data)<-c("QID", "DigiCit","HomoIndex")
 
 
 #Cambiar de caracter a número
@@ -84,22 +86,26 @@ args<-as.numeric(args)
 
 DigitCount <-sum(args[2:15])
 
-bdata$orig$DigiCit <-ifelse(DigitCount<=56,"0",
-                            ifelse(DigitCount>=57,"1"))
+#bdata$orig$
 
-bdata$x$DigiCit <-ifelse(DigitCount<=56,"0",
-                         ifelse(DigitCount>=57,"1"))
+DigiCit <-ifelse(DigitCount<=56,0,1)
+
+
+#bdata$x$DigiCit <-ifelse(DigitCount<=56,"0",
+#                         ifelse(DigitCount>=57,"1"))
 
 
 # Homofilia política
 
 HomoCount <-sum(args[15:21])
 
-bdata$orig$HomoIndex <-ifelse(HomoCount<=39,"0",
-                              ifelse(HomoCount>=40,"1"))
+#bdata$orig$HomoIndex <-ifelse(HomoCount<=39,"0",
+#                              ifelse(HomoCount>=40,"1"))
 
-bdata$x$HomoIndex <-ifelse(HomoCount<=39,"0",
-                           ifelse(HomoCount>=40,"1"))
+HomoIndex <-ifelse(HomoCount<=39,0,1)
+
+#bdata$x$HomoIndex <-ifelse(HomoCount<=39,"0",
+#                           ifelse(HomoCount>=40,"1"))
 
 
  #### Block Randomization
@@ -108,14 +114,14 @@ bdata$x$HomoIndex <-ifelse(HomoCount<=39,"0",
 
 if(sum(part.data$QID %in% QID)>0){
   # Retuen value to PHP via stdout
-  tr <- bdata$x$Tr[which(bdata$x$QID==QID)[1]]
+  tr <- bdata$x$Tr[which(bdata$x$QID==QID)[1]] #Chequeo para revisr si el QID ya estaba antes
   
 } else {
   # update the data.frame
   part.data <- rbind(part.data, 
-                     data.frame(QID=args[6], 
-                                DigitalCit=as.numeric(args[1])+rnorm(1,sd=.001), #ciudadanía digital
-                                HomoIndex=as.numeric(args[2])+rnorm(1,sd=.001))) # Homofilia
+                     data.frame(QID=args[1], 
+                                DigiCit=DigiCit+rnorm(1,sd=.001), #ciudadanía digital
+                                HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
   # update the seqblock objects
   n.idx <- nrow(part.data)
   bdata <- seqblock2k(object.name = "bdata", 
@@ -123,105 +129,45 @@ if(sum(part.data$QID %in% QID)>0){
                       covar.vals = part.data[n.idx,-c(1)], 
                       verbose = FALSE)
   
-  tr <- bdata$x$Tr[length(bdata$x$Tr)]
+  tr1 <- bdata$x$Tr[length(bdata$x$Tr)] 
   
   # Save data
   save(mahal,seqblock1,seqblock2k,bdata,part.data,file="/var/www/r.cess.cl/public_html/sp/new.RData")
 }
 
 
-####Hasta acá
+load("/var/www/r.cess.cl/public_html/sp/nuevaBDfinal.RData") # Revisar si es del coódigo antiguo
 
-tr<-strsplit(tr,split = ",")[[1]]
-tr<-as.numeric(tr)
-
-load("/var/www/r.cess.cl/public_html/sp/nuevaBDfinal.RData")
+##b.data2
 
 
-#if(length(args) != 5){
-#  stop()
-#}
-
-genderQ<-args[1]   ## Genero
-econQ<-args[2]    ## SES
-QID <- args[6]
-
-
-
-#### list of treatment functions
-#### Random selection of treatment without replacement
-selected<-c(namedVF[tr[1]],namedVF[tr[2]])
-selectedQID<-names(selected) ## list of selected treatments to send to Qualtrics
-
-
-### executing treatments
-selected[[1]](gender, econ, pairvct[1], pair, v=1)
-
-selected[[2]](gender, econ, pairvct[2], pair, v=2)
-
-
-#### Payment lists for treatments
-
-fcn.payment <- function(gender, econ, mode, pair, selectedTreat){
-  id<-paste0(gender, econ, ".", mode, ".", pair)
+if(sum(part.data$QID %in% QID)>0){   # rreglar para que todo quede en bdata2 o part-data2 segun sea el caso
+  # Retuen value to PHP via stdout
+  tr <- bdata$x$Tr[which(bdata2$x$QID==QID)[1]] #Chequeo para revisr si el QID ya estaba antes
   
-  payment<-all.files[all.files$id==id, c("razon_social", "val_uf_pension", "val_pesos_pension" ,"VPN")]
+} else {
+  # update the data.frame
+  part.data <- rbind(part.data, 
+                     data.frame(QID=args[1], 
+                                DigiCit=DigiCit+rnorm(1,sd=.001), #ciudadanía digital
+                                HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
+  # update the seqblock objects
+  n.idx <- nrow(part.data)
+  bdata <- seqblock2k(object.name = "bdata", 
+                      id.vals = part.data[n.idx, "QID"],  
+                      covar.vals = part.data[n.idx,-c(1)], 
+                      verbose = FALSE)
   
-  mn<-15-nrow(payment)
+  tr1 <- bdata$x$Tr[length(bdata$x$Tr)] 
   
-  payment[nrow(payment)+mn,] <- NA
-  
-  # treatment if condition for payment$opcion  order
-  payment<-if(selectedTreat=="control") {payment[order(-payment$val_uf_pension),]
-  } else if (selectedTreat=="treat1") { payment[order(-payment$val_pesos_pension),]
-  } else if (selectedTreat=="treat2") { payment[order(-payment$val_pesos_pension),]
-  } else if (selectedTreat=="treat3") { payment[order(-payment$VPN),]
-  } else {payment[order(-payment$VPN),]}
-  
-  payment$opcion<-1:15
-  
-  payment$VPN<-ifelse(is.na(payment$VPN), 0, payment$VPN )
-  
-  n <- 15
-  payment$pay<- ifelse(payment$VPN==0, 0, 
-                       ifelse(payment$VPN==max(payment$VPN, na.rm=T), 1500, 
-                              ifelse(payment$VPN==sort(payment$VPN,partial=n-1)[n-1], 1400,
-                                     ifelse(payment$VPN==sort(payment$VPN,partial=n-2)[n-2], 1200, 
-                                            ifelse(payment$VPN==sort(payment$VPN,partial=n-3)[n-3], 900,
-                                                   ifelse(payment$VPN==sort(payment$VPN,partial=n-4)[n-4], 500, 
-                                                          ifelse(payment$VPN==sort(payment$VPN,partial=n-5)[n-5], 100, 
-                                                                 ifelse(payment$VPN==sort(payment$VPN,partial=n-6)[n-6], 50, 0
-                                                                 ) ) ) ) ) ) ) )
-  
-  
-  row.names(payment)<-payment$opcion
-  pay.list<-payment[, "pay"]
-  pay.list <- as.list(as.data.frame(t(pay.list)))
-  
-  return(pay.list)
+  # Save data
+  save(mahal,seqblock1,seqblock2k,bdata,part.data,file="/var/www/r.cess.cl/public_html/sp/new.RData")
 }
-
-pay.op1<-fcn.payment(gender, econ, pairvct[1], pair, selectedQID[1])
-
-pay.op2<-fcn.payment(gender, econ, pairvct[2], pair, selectedQID[2])
-
-
-### Largo Opciones por tratamiento
-fcn.opcion <- function(gender, econ, mode, pair, selectedTreat){
-  id<-paste0(gender, econ, ".", mode, ".", pair)
-  
-  tbl<-all.files[all.files$id==id, c("razon_social", "VPN")]
-  length<-nrow(tbl)
-  return(length)
-}
-
-length1<-fcn.opcion(gender, econ, pairvct[1], pair)
-length2<-fcn.opcion(gender, econ, pairvct[2], pair)
 
 
 #envio de datos a qualtrics
-to_qs<-c(pay.op1, pay.op2, selectedQID, length1, length2)
-cat(sprintf("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s", to_qs[1], to_qs[2], to_qs[3], to_qs[4], to_qs[5], to_qs[6], to_qs[7], to_qs[8], to_qs[9], to_qs[10], to_qs[11],to_qs[12], to_qs[13], to_qs[14], to_qs[15], to_qs[16], to_qs[17], to_qs[18], to_qs[19], to_qs[20], to_qs[21],to_qs[22], to_qs[23], to_qs[24], to_qs[25], to_qs[26], to_qs[27], to_qs[28], to_qs[29], to_qs[30], to_qs[31], to_qs[32], to_qs[33], to_qs[34]))
+to_qs<-c(tr1, tr2, tr3, tr4)
+cat(sprintf("%s,%s,%s,%s", to_qs[1], to_qs[2], to_qs[3], to_qs[4]))
 
 
 
