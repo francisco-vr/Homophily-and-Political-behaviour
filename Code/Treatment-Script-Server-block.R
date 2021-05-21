@@ -100,7 +100,7 @@ HomoCount <-sum(args[15:21])
 
 HomoIndex <-ifelse(HomoCount<=39,0,1)
 
-#División de bases
+#División de bases y guardado
 
 bdata1=bdata
 bdata2=bdata
