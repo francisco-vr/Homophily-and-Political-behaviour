@@ -70,10 +70,16 @@ QID = args[1]
 
 #### Data Management
 
-#Cambio de nombres en bdata y part.data
+#Cambio de nombres en bdata y part.data y tratamientos
 
 names(bdata$orig) <-c("QID","DigiCit","HomoIndex","Tr")
 names(bdata$x) <-c("QID", "DigiCit","HomoIndex","Tr")
+
+bdata$trn <-bdata$trn[-c(4:10)]
+names(bdata$trn)<-c("1,1","1,2","1,3")
+
+bdata$tr.sort<-bdata$tr.sort[-c(4:10)]
+bdata$tr.sort<-c("1,1","1,2","1,3")
 
 names(part.data)<-c("QID", "DigiCit","HomoIndex")
 
@@ -86,53 +92,53 @@ args<-as.numeric(args)
 
 DigitCount <-sum(args[2:15])
 
-#bdata$orig$
-
 DigiCit <-ifelse(DigitCount<=56,0,1)
-
-
-#bdata$x$DigiCit <-ifelse(DigitCount<=56,"0",
-#                         ifelse(DigitCount>=57,"1"))
-
 
 # Homofilia política
 
 HomoCount <-sum(args[15:21])
 
-#bdata$orig$HomoIndex <-ifelse(HomoCount<=39,"0",
-#                              ifelse(HomoCount>=40,"1"))
-
 HomoIndex <-ifelse(HomoCount<=39,0,1)
 
-#bdata$x$HomoIndex <-ifelse(HomoCount<=39,"0",
-#                           ifelse(HomoCount>=40,"1"))
+#División de bases
+
+bdata1=bdata
+bdata2=bdata
+
+part.data1=part.data
+
+saveRDS(bdata1, file ="new1.RData")
+
+part.data2=part.data
+
+saveRDS(bdata2, file = "new2.RData")
 
 
  #### Block Randomization
 
-###### Concentrarse acá
+##Pregunta1
 
-if(sum(part.data$QID %in% QID)>0){
+if(sum(part.data1$QID %in% QID)>0){
   # Retuen value to PHP via stdout
-  tr <- bdata$x$Tr[which(bdata$x$QID==QID)[1]] #Chequeo para revisr si el QID ya estaba antes
+  tr <- bdata1$x$Tr[which(bdata1$x$QID==QID)[1]] #Chequeo para revisr si el QID ya estaba antes
   
 } else {
   # update the data.frame
-  part.data <- rbind(part.data, 
+  part.data1 <- rbind(part.data1, 
                      data.frame(QID=args[1], 
                                 DigiCit=DigiCit+rnorm(1,sd=.001), #ciudadanía digital
                                 HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
   # update the seqblock objects
-  n.idx <- nrow(part.data)
-  bdata <- seqblock2k(object.name = "bdata", 
-                      id.vals = part.data[n.idx, "QID"],  
-                      covar.vals = part.data[n.idx,-c(1)], 
+  n.idx <- nrow(part.data1)
+  bdata1 <- seqblock2k(object.name = "bdata1", 
+                      id.vals = part.data1[n.idx, "QID"],  
+                      covar.vals = part.data1[n.idx,-c(1)], 
                       verbose = FALSE)
   
-  tr1 <- bdata$x$Tr[length(bdata$x$Tr)] 
+  tr1 <- bdata1$x$Tr[length(bdata1$x$Tr)] 
   
   # Save data
-  save(mahal,seqblock1,seqblock2k,bdata,part.data,file="/var/www/r.cess.cl/public_html/sp/new.RData")
+  save(mahal,seqblock1,seqblock2k,bdata1,part.data1,file="/var/www/r.cess.cl/public_html/sp/new.RData")
 }
 
 
@@ -141,27 +147,27 @@ load("/var/www/r.cess.cl/public_html/sp/nuevaBDfinal.RData") # Revisar si es del
 ##b.data2
 
 
-if(sum(part.data$QID %in% QID)>0){   # rreglar para que todo quede en bdata2 o part-data2 segun sea el caso
+if(sum(part.data2$QID %in% QID)>0){   # rreglar para que todo quede en bdata2 o part-data2 segun sea el caso
   # Retuen value to PHP via stdout
-  tr <- bdata$x$Tr[which(bdata2$x$QID==QID)[1]] #Chequeo para revisr si el QID ya estaba antes
+  tr <- bdata2$x$Tr[which(bdata2$x$QID==QID)[1]] #Chequeo para revisr si el QID ya estaba antes
   
 } else {
   # update the data.frame
-  part.data <- rbind(part.data, 
+  part.data2 <- rbind(part.data2, 
                      data.frame(QID=args[1], 
                                 DigiCit=DigiCit+rnorm(1,sd=.001), #ciudadanía digital
                                 HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
   # update the seqblock objects
-  n.idx <- nrow(part.data)
-  bdata <- seqblock2k(object.name = "bdata", 
-                      id.vals = part.data[n.idx, "QID"],  
-                      covar.vals = part.data[n.idx,-c(1)], 
+  n.idx <- nrow(part.data2)
+  bdata2 <- seqblock2k(object.name = "bdata2", 
+                      id.vals = part.data2[n.idx, "QID"],  
+                      covar.vals = part.data2[n.idx,-c(1)], 
                       verbose = FALSE)
   
-  tr1 <- bdata$x$Tr[length(bdata$x$Tr)] 
+  tr2 <- bdata2$x$Tr[length(bdata2$x$Tr)] 
   
   # Save data
-  save(mahal,seqblock1,seqblock2k,bdata,part.data,file="/var/www/r.cess.cl/public_html/sp/new.RData")
+  save(mahal,seqblock1,seqblock2k,bdata2,part.data2,file="/var/www/r.cess.cl/public_html/sp/new.RData")
 }
 
 
