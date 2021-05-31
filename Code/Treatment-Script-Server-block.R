@@ -104,19 +104,26 @@ HomoIndex <-ifelse(HomoCount<=39,0,1)
 
 bdata1=bdata
 bdata2=bdata
+bdata3=bdata
+bdata4=bdata
+
 
 part.data1=part.data
-
-saveRDS(bdata1, file ="new1.RData")
+saveRDS(bdata1, file = "new1.RData")
 
 part.data2=part.data
-
 saveRDS(bdata2, file = "new2.RData")
+
+part.data3=part.data
+saveRDS(bdata3, file = "new3.RData")
+
+part.data4=part.data
+saveRDS(bdata4, file = "new4.RData")
 
 
  #### Block Randomization
 
-##Pregunta1
+##Pregunta1 (bdata1)
 
 if(sum(part.data1$QID %in% QID)>0){
   # Retuen value to PHP via stdout
@@ -144,7 +151,7 @@ if(sum(part.data1$QID %in% QID)>0){
 
 load("/var/www/r.cess.cl/public_html/sp/nuevaBDfinal.RData") # Revisar si es del coódigo antiguo
 
-##b.data2
+##Pregunta 2 (b.data2)
 
 
 if(sum(part.data2$QID %in% QID)>0){   # rreglar para que todo quede en bdata2 o part-data2 segun sea el caso
@@ -168,6 +175,57 @@ if(sum(part.data2$QID %in% QID)>0){   # rreglar para que todo quede en bdata2 o 
   
   # Save data
   save(mahal,seqblock1,seqblock2k,bdata2,part.data2,file="/var/www/r.cess.cl/public_html/sp/new.RData")
+}
+
+## Pregunta 3(bdata3)
+
+if(sum(part.data3$QID %in% QID)>0){   # arreglar para que todo quede en bdata2 o part-data2 segun sea el caso
+  # Retuen value to PHP via stdout
+  tr <- bdata3$x$Tr[which(bdata3$x$QID==QID)[1]] #Chequeo para revisr si el QID ya estaba antes
+  
+} else {
+  # update the data.frame
+  part.data3 <- rbind(part.data3, 
+                      data.frame(QID=args[1], 
+                                 DigiCit=DigiCit+rnorm(1,sd=.001), #ciudadanía digital
+                                 HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
+  # update the seqblock objects
+  n.idx <- nrow(part.data3)
+  bdata2 <- seqblock2k(object.name = "bdata3", 
+                       id.vals = part.data3[n.idx, "QID"],  
+                       covar.vals = part.data3[n.idx,-c(1)], 
+                       verbose = FALSE)
+  
+  tr3 <- bdata3$x$Tr[length(bdata3$x$Tr)] 
+  
+  # Save data
+  save(mahal,seqblock1,seqblock2k,bdata3,part.data3,file="/var/www/r.cess.cl/public_html/sp/new.RData")
+}
+
+
+##Pregunta 4(bdata4)
+
+if(sum(part.data4$QID %in% QID)>0){   # rreglar para que todo quede en bdata2 o part-data2 segun sea el caso
+  # Retuen value to PHP via stdout
+  tr <- bdata4$x$Tr[which(bdata4$x$QID==QID)[1]] #Chequeo para revisr si el QID ya estaba antes
+  
+} else {
+  # update the data.frame
+  part.data4 <- rbind(part.data4, 
+                      data.frame(QID=args[1], 
+                                 DigiCit=DigiCit+rnorm(1,sd=.001), #ciudadanía digital
+                                 HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
+  # update the seqblock objects
+  n.idx <- nrow(part.data4)
+  bdata4 <- seqblock2k(object.name = "bdata4", 
+                       id.vals = part.data4[n.idx, "QID"],  
+                       covar.vals = part.data4[n.idx,-c(1)], 
+                       verbose = FALSE)
+  
+  tr4 <- bdata4$x$Tr[length(bdata4$x$Tr)] 
+  
+  # Save data
+  save(mahal,seqblock1,seqblock2k,bdata4,part.data4,file="/var/www/r.cess.cl/public_html/sp/new.RData")
 }
 
 
