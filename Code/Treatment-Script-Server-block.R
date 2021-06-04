@@ -8,22 +8,10 @@
 #.libPaths=("/usr/lib64/R/library/")
 
 require(plyr)
-#require(ggplot2)
-#theme_set(theme_bw())
-#require(scales)
-#require(gridExtra)
-#require(xtable)
-#require(RColorBrewer)
-#require(htmlTable)
-#library(gridBase)
-#require(grid)
 require(forcats)
 require(pacman)
 pacman::p_load(ggplot2, extrafont, scales)
 require(purrr, warn.conflicts = FALSE, quietly = TRUE)
-#require(magick,  warn.conflicts = FALSE, quietly = TRUE)
-#require(scales)
-#require(OpenImageR)
 
 #Amazon Server
 #setwd("/var/www/r.cess.cl/public_html/")
@@ -76,12 +64,16 @@ names(bdata$orig) <-c("QID","DigiCit","HomoIndex","Tr")
 names(bdata$x) <-c("QID", "DigiCit","HomoIndex","Tr")
 
 bdata$trn <-bdata$trn[-c(4:10)]
-names(bdata$trn)<-c("1,1","1,2","1,3")
+bdata$trn <-c(1,2,3)
 
 bdata$tr.sort<-bdata$tr.sort[-c(4:10)]
-bdata$tr.sort<-c("1,1","1,2","1,3")
-
+bdata$tr.sort<-c(1,2,3)
 names(part.data)<-c("QID", "DigiCit","HomoIndex")
+
+bdata$ncv <-c("DigiCit","HomoIndex")
+bdata$ocv <-c("DigiCit","HomoIndex")
+
+bdata$orig$Tr <-1
 
 
 #Cambiar de caracter a número
@@ -137,12 +129,12 @@ if(sum(part.data1$QID %in% QID)>0){
                                 HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
   # update the seqblock objects
   n.idx <- nrow(part.data1)
-  bdata1 <- seqblock2k(object.name = "bdata1", 
-                      id.vals = part.data1[n.idx, "QID"],  
-                      covar.vals = part.data1[n.idx,-c(1)], 
-                      verbose = FALSE)
+  bdata1 <- seqblock2k(object.name ="bdata1",
+                       id.vals = part.data1[n.idx,"QID"],
+                       covar.vals = part.data1[n.idx,-c(1)],
+                       verbose = FALSE)
   
-  tr1 <- bdata1$x$Tr[length(bdata1$x$Tr)] 
+tr1 <- bdata1$x$Tr[length(bdata1$x$Tr)] 
   
   # Save data
   save(mahal,seqblock1,seqblock2k,bdata1,part.data1,file="/var/www/r.cess.cl/public_html/sp/new.RData")
@@ -160,16 +152,16 @@ if(sum(part.data2$QID %in% QID)>0){   # rreglar para que todo quede en bdata2 o 
   
 } else {
   # update the data.frame
-  part.data2 <- rbind(part.data2, 
-                     data.frame(QID=args[1], 
-                                DigiCit=DigiCit+rnorm(1,sd=.001), #ciudadanía digital
-                                HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
+  part.data2 <- rbind(part.data2,
+                      data.frame(QID=args[1],
+                                 DigiCit=DigiCit+rnorm(1,sd=.001), #ciudadanía digital
+                                 HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
   # update the seqblock objects
   n.idx <- nrow(part.data2)
-  bdata2 <- seqblock2k(object.name = "bdata2", 
-                      id.vals = part.data2[n.idx, "QID"],  
-                      covar.vals = part.data2[n.idx,-c(1)], 
-                      verbose = FALSE)
+  bdata2 <- seqblock2k(object.name ="bdata2",
+                       id.vals = part.data2[n.idx,"QID"],
+                       covar.vals = part.data2[n.idx,-c(1)],
+                       verbose = FALSE)
   
   tr2 <- bdata2$x$Tr[length(bdata2$x$Tr)] 
   
@@ -191,9 +183,9 @@ if(sum(part.data3$QID %in% QID)>0){   # arreglar para que todo quede en bdata2 o
                                  HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
   # update the seqblock objects
   n.idx <- nrow(part.data3)
-  bdata2 <- seqblock2k(object.name = "bdata3", 
-                       id.vals = part.data3[n.idx, "QID"],  
-                       covar.vals = part.data3[n.idx,-c(1)], 
+  bdata2 <- seqblock2k(object.name ="bdata3",
+                       id.vals = part.data3[n.idx,"QID"],
+                       covar.vals = part.data3[n.idx,-c(1)],
                        verbose = FALSE)
   
   tr3 <- bdata3$x$Tr[length(bdata3$x$Tr)] 
@@ -217,12 +209,12 @@ if(sum(part.data4$QID %in% QID)>0){   # rreglar para que todo quede en bdata2 o 
                                  HomoIndex=HomoIndex+rnorm(1,sd=.001))) # Homofilia
   # update the seqblock objects
   n.idx <- nrow(part.data4)
-  bdata4 <- seqblock2k(object.name = "bdata4", 
-                       id.vals = part.data4[n.idx, "QID"],  
-                       covar.vals = part.data4[n.idx,-c(1)], 
+  bdata4 <- seqblock2k(object.name ="bdata4",
+                       id.vals = part.data4[n.idx,"QID"],
+                       covar.vals = part.data4[n.idx,-c(1)],
                        verbose = FALSE)
   
-  tr4 <- bdata4$x$Tr[length(bdata4$x$Tr)] 
+tr4 <- bdata4$x$Tr[length(bdata4$x$Tr)] 
   
   # Save data
   save(mahal,seqblock1,seqblock2k,bdata4,part.data4,file="/var/www/r.cess.cl/public_html/sp/new.RData")
