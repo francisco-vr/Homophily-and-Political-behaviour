@@ -75,6 +75,8 @@ bdata$ocv <-c("DigiCit","HomoIndex")
 
 bdata$orig$Tr <-1
 
+bdata$x$Tr <-1
+
 
 #Cambiar de caracter a número
 
@@ -141,7 +143,6 @@ tr1 <- bdata1$x$Tr[length(bdata1$x$Tr)]
 }
 
 
-load("/var/www/r.cess.cl/public_html/sp/nuevaBDfinal.RData") # Revisar si es del coódigo antiguo
 
 ##Pregunta 2 (b.data2)
 
@@ -226,6 +227,8 @@ to_qs<-c(tr1, tr2, tr3, tr4)
 cat(sprintf("%s,%s,%s,%s", to_qs[1], to_qs[2], to_qs[3], to_qs[4]))
 
 
+
+load("/var/www/r.cess.cl/public_html/sp/nuevaBDfinal.RData") # Revisar si es del coódigo antiguo
 
 
 
