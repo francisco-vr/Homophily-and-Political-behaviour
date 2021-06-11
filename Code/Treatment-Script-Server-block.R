@@ -5,7 +5,7 @@
 ################################################
 
 #No incluir el llamado a librerias individuales, sino la carpeta donde estÃÂÃÂ¡n instaladas
-#.libPaths=("/usr/lib64/R/library/")
+.libPaths=("/usr/lib64/R/library/")
 
 require(plyr)
 require(forcats)
@@ -25,18 +25,18 @@ setwd("~/Documentos/Git/Master_Thesis/Code")
 ###########################block randmisation####################### 
 
 #Editar al final cuando tengamos claridad de numero de argumentos
-#if(args[22] == "reset_database"){
+#if(args[25] == "reset_database"){
 #  time <- Sys.time()
 #  time <- gsub("[:alph:]", "", time)
 #  time <- gsub(" ", "_", time)
-  
+#  
 #  file.copy("/var/www/r.cess.cl/public_html/sp/new.RData", sprintf("rdata_bak_%s.Rdata", time))
 #  file.copy("/var/www/r.cess.cl/public_html/sp/new_orig.RData", "new.RData", overwrite = T)
 #  stop()
 #}
 
 #args <- as.vector(t(sim.data[i, ]))
-#if(length(args) != 22){
+#if(length(args) != 25){
 #  stop()
 #}
 
@@ -139,7 +139,7 @@ if(sum(part.data1$QID %in% QID)>0){
 tr1 <- bdata1$x$Tr[length(bdata1$x$Tr)] 
   
   # Save data
-  save(mahal,seqblock1,seqblock2k,bdata1,part.data1,file="/var/www/r.cess.cl/public_html/sp/new.RData")
+  save(mahal,seqblock1,seqblock2k,bdata1,part.data1,file="new1.RData")
 }
 
 
@@ -167,7 +167,7 @@ if(sum(part.data2$QID %in% QID)>0){   # rreglar para que todo quede en bdata2 o 
   tr2 <- bdata2$x$Tr[length(bdata2$x$Tr)] 
   
   # Save data
-  save(mahal,seqblock1,seqblock2k,bdata2,part.data2,file="/var/www/r.cess.cl/public_html/sp/new.RData")
+  save(mahal,seqblock1,seqblock2k,bdata2,part.data2,file="new2.RData")
 }
 
 ## Pregunta 3(bdata3)
@@ -192,7 +192,7 @@ if(sum(part.data3$QID %in% QID)>0){   # arreglar para que todo quede en bdata2 o
   tr3 <- bdata3$x$Tr[length(bdata3$x$Tr)] 
   
   # Save data
-  save(mahal,seqblock1,seqblock2k,bdata3,part.data3,file="/var/www/r.cess.cl/public_html/sp/new.RData")
+  save(mahal,seqblock1,seqblock2k,bdata3,part.data3,file="new3.RData")
 }
 
 
@@ -218,7 +218,7 @@ if(sum(part.data4$QID %in% QID)>0){   # rreglar para que todo quede en bdata2 o 
 tr4 <- bdata4$x$Tr[length(bdata4$x$Tr)] 
   
   # Save data
-  save(mahal,seqblock1,seqblock2k,bdata4,part.data4,file="/var/www/r.cess.cl/public_html/sp/new.RData")
+  save(mahal,seqblock1,seqblock2k,bdata4,part.data4,file="new4.RData")
 }
 
 
@@ -228,7 +228,6 @@ cat(sprintf("%s,%s,%s,%s", to_qs[1], to_qs[2], to_qs[3], to_qs[4]))
 
 
 
-load("/var/www/r.cess.cl/public_html/sp/nuevaBDfinal.RData") # Revisar si es del coódigo antiguo
 
 
 
