@@ -1,0 +1,138 @@
+---
+title: "Outcomes Factorial analysis"
+author: "Francisco Villarroel"
+date: "04-12-2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Proceso de validación de escala de posición política
+
+En este documento daremos los principales resultados que arroja nuestro proceso de validación de escala de posición política, que será utilizada en nuestra encuesta experimental sobre la influencia de la homofilia y la posición política en las emociones en la esfera pública.
+
+El informe está distribuído en tres partes: 1)test previos para ver si la escala es suceptible de ser apta para un análisis factorial, 2) Análisis factorial exploratorio y 3) Análisis factorial confirmatorio.
+
+## Descripción de escala
+
+Esta escala está construída integramente por su autor, inspirado en distintas escalas de medición política proveniente de otras encuestas, peroa justadas a una realidad nacional compleja, muy dinámica y donde las posiciones políticas han sufrido numerosas modificaciones y las escalas más antiguas no podrían dar cuenta de la especificidad del momento. se probaron 11 ítemes en una esclaa de likert de 4 puntos con las opciones "Muy en desacuerdo", "En desacuerdo", "De acuerdo" y "Muy de acuerdo". Se eligieron sólo 4 puntos y no 5 o 7 pues la finalidad de esta escala es poder clasificar políticamente a las personas para una posterior aleatorización, más que abarcar toda la variedad y complejidad política existente.
+
+La muiestra consiste en 299 encuestas, realizadas en una mezcla de método de bola de nieve y distintos mensajes en redes sociales (Principalmente Facebook) y que serán divididas en dos partes: una ṕrimera base de datos (nombre "AFE")  de 212 casos para el análisis factorial exploratorio y los test de prueba, y luego la base total (DFscale) CON 299 casos, que son los mismos 212 más casos restantes.
+
+
+```{r, echo=F, message=F}
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+```
+
+```{r,echo=F,message=F, warning=F}
+
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+# usage
+packages <- c("apa","apaTables", "GPArotation","psych","parameters",
+              "psychometric", "lavaan", "nFactors", "semPlot","MVN", "semTools")
+ipak(packages)
+```
+
+## Test de prueba
+
+### Test de correlaciones
+```{r}
+load(file = "Pre-testing scales/Data/Processing/AFE.RData")
+
+corr.test(AFE)
+```
+
+como vemos en los resultados, las variables parecieran estar correlacionadas y en la significancia estadística es menos al 0.05
+
+
+### Barlett test
+
+Para ir un poco más allá utilizamos el test de barlett para observar la esfericidad de la escala
+
+```{r}
+correlaciones <-corr.test(AFE)
+correlaciones$r
+r<-as.matrix(correlaciones$r)
+cortest.bartlett(r, n=214)
+
+```
+Vemos que el p-valor es bastante menos de 0.005 por lo tanto esta escala está apta para ser suceptible de análisis factorial
+
+###KMO test
+
+
+```{r}
+KMO(AFE)
+```
+
+Según lo que señalan estos test, esta escala tiene las características necesarias para ser sometida a análisis factorial. Haremos primero el análisis Factorial Exploratorio y luego daremos los resultados del confirmatorio, tanto para un factor como para dos.
+
+## Análisis factorial exploratorio
+
+Se ha resuelto por usar un método de rotación oblicuo, donde hemos probado distintos modelos sin tener mayores diferencias de resultados.
+
+```{r}
+results_nfactorASI<-n_factors(AFE, rotate = "Promax", fm = "mle", n = NULL)
+plot(results_nfactorASI)
+results_nfactorASI
+as.data.frame(results_nfactorASI)
+summary(results_nfactorASI)
+```
+
+
+Como vemos, el proceso para analizar cuántos factores tenemos muestra que tenemos 2. Puede que ambos factores sean "Izquierda" y "Derecha"?
+
+Para ver el nivel de correlación de ellos observemos el análisis factorial exploratorio:
+
+```{r}
+ASIfactor<-fa(AFE,nfactors = 2,fm = "ml",rotate ="Promax",cor = "poly")
+print(ASIfactor,digits = 2,cut = .40,sort=TRUE)
+```
+
+
+## Análisis factorial confirmatorio
+
+Vamos a ver qué nos dice el confirmatorio. con él hicimos dos muestras: una como si fuese un sólo factor (que está al comienzo) y un segundo análisis que considera dos factores, siendo "left" y "right" sus etiquetas.
+
+Recordar que este procedimiento se realiza con la base completa
+
+```{r}
+load(file = "Pre-testing scales/Data/Processing/scale.RData")
+
+Onefactor<-'Ideol =~ esc_migra + esc_abort + esc_strate + esc_const + esc_rich + esc_effort 
++ esc_afp + esc_policia + esc_mapuche + esc_autorita
+'
+Twofactor<-'Left =~ esc_rich + esc_strate + esc_afp + esc_const + esc_mapuche 
+Right =~ esc_policia + esc_autorita + esc_abort + esc_migra + esc_effort'
+
+CFAone <- cfa(Onefactor,orthogonal=FALSE, data=DFscale, estimator="WLSMV",ordered =names(DFscale))
+summary(CFAone, fit.measures=TRUE)
+
+CFAtworele <- cfa(Twofactor,orthogonal=FALSE, data=DFscale, estimator="WLSMV",ordered =names(DFscale))
+summary(CFAtworele, fit.measures=TRUE)
+fitMeasures(CFAtworele)
+semPaths(CFAtworele, intercepts = FALSE,edge.label.cex=2.5, optimizeLatRes = TRUE, groups = "lat",
+         pastel = TRUE, exoVar = FALSE, sizeInt=5,edge.color ="black",esize = 6, label.prop=2,
+         sizeLat = 6,"std", layout="circle2")
+```
+
+## Conclusiones
+
+Son las siguientes
+
+* Por lo visto en los pre-test, creo que la escala es apta para análisis confirmatorio
+* No sé cómo interpretar lo de los dos factores descubiertos en el AFE. ¿Serán izquierda y derecha?
+* Tanto para el AFE como el AFC, no sé cuáles de todos los cerros de indicadores son los más importantes que debo reportar
+* En el pathanálysis que muestra la influencia de cada ítem en los factores, no sé cómo interpretar las líneas entrecortadas (significancia estadística?) y los números en gris oscuro.
+
+
+¡Gracias!
+

@@ -1,0 +1,1789 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q_RelevantIDDuplicate,Q_RelevantIDDuplicateScore,Q_RelevantIDFraudScore,Q_RelevantIDLastStartDate,Consent,Age,NivEco,Genre,Genre_3_TEXT,Educ,Homo_1,Homo_2,Homo_3,Homo_4,Homo_5,Homo_6,Homo_7,DigiCit_1,DigiCit_2,DigiCit_3,DigiCit_4,DigiCit_5,DigiCit_6,DigiCit_7,DigiCit_8,DigiCit_9,DigiCit_10,DigiCit_11,DigiCit_12,DigiCit_13,DigiCit_14,PosPol_1,PosPol_2,PosPol_3,PosPol_4,PosPol_5,PosPol_6,PosPol_7,PosPol_8,PosPol_9,IdePol,Ideolo_1,E1T1a_1,E1T1b_1,E1T2a_1,E1T2b_1,E1TC_1,E2T1a_1,E2T1a_2,E2T1a_3,E2T1a_4,E2T1a_5,E2T1a_6,E2T1a_7,E2T1b_1,E2T1b_2,E2T1b_3,E2T1b_4,E2T1b_5,E2T1b_6,E2T1b_7,E2T1c_1,E2T1c_2,E2T1c_3,E2T1c_4,E2T1c_5,E2T1c_6,E2T1c_7,E2T1d_1,E2T1d_2,E2T1d_3,E2T1d_4,E2T1d_5,E2T1d_6,E2T1d_7,E2T2a_1,E2T2a_2,E2T2a_3,E2T2a_4,E2T2a_5,E2T2a_6,E2T2a_7,E2T2b_1,E2T2b_2,E2T2b_3,E2T2b_4,E2T2b_5,E2T2b_6,E2T2b_7,E2T2b_8,E2T2b_9,E2T2b_10,E2T2b_11,E2T2b_12,E2T2c_1,E2T2c_2,E2T2c_3,E2T2c_4,E2T2c_5,E2T2c_6,E2T2c_7,E2TC_1,E2TC_2,E2TC_3,E2TC_4,E2TC_5,E2TC_6,E2TC_7,E2TC_8,E2TC_9,E2TC_10,E2TC_11,E2TC_12,E3T1a1_1,E3T1a1_2,E3T1a1_4,E3T1a1_5,E3T1a2,E3T1b1_1,E3T1b1_2,E3T1b1_4,E3T1b1_5,E3T1b2,E3T2a1_1,E3T2a1_2,E3T2a1_4,E3T2a1_5,E3T2a2,E3T2b1_1,E3T2b1_2,E3T2b1_4,E3T2b1_5,E3T2b2,E3T3a1_1,E3T3a1_4,E3T3a1_5,E3T3a1_6,E3T3a2,E3T3b1_1,E3T3b1_2,E3T3b1_4,E3T3b1_5,E3T3b2,E3T4a1_1,E3T4a1_2,E3T4a1_4,E3T4a1_5,E3T4a2,E3T4b1_1,E3T4b1_2,E3T4b1_4,E3T4b1_5, E3T4b2,E4T1a1_1,E4T1a1_2,E4T1a1_4,E4T1a1_5,E4T1a2,E4T1b1_1,E4T1b1_2,E4T1b1_4,E4T1b1_5,E4T1b2,E4T2a1_1,E4T2a1_2,E4T2a1_4,E4T2a1_5,E4T2a2,E4T2b1_1,E4T2b1_2,E4T2b1_4,E4T2b1_5,E4T2b2,E4T3a1_1,E4T3a1_2,E4T3a1_4,E4T3a1_5,E4T3a2,E4T4a1_1,E4T4a1_2,E4T4a1_3,E4T4a1_4,E4T4a2,SC0
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,Q_RelevantIDDuplicate,Q_RelevantIDDuplicateScore,Q_RelevantIDFraudScore,Q_RelevantIDLastStartDate,"Consentimiento
+
+
+El CESS es un grupo de investigadores que estamos asociados a la Universidad de Santiago de Chile, que realizamos estudios sobre el comportamiento humano. En este estudio, titulado ""Amistades y discusión política en Chile"", liderado por Francisco Villarroel, tesista del Magíster en Ciencias Sociales mención estudios de la sociedad civil, del Instituto de Estudios Avanzados de la  Universidad de Santiago de Chile, que busca evaluar las discusiones de temas políticos y la construcción de lazos de amistad. Los datos recolectados en esta encuesta serán usados para fines académicos y se mantendrán en reserva sus datos privados e identidad. Al tomar parte de este estudio y hacer click en “Sí, he leído y entendido las reglas” usted decide libremente formar parte de esta investigación de acuerdo con los principios establecidos en este consentimiento informado
+
+
+
+Es muy importante para el éxito de este estudio que usted llegue hasta el final de la encuesta, esto debería tomar (en promedio) 15 minutos.
+
+
+
+Antes de dar su consentimiento, por favor lea los siguientes enunciados cuidadosamente.
+
+
+
+Nuestros compromisos y políticas de privacidad
+
+
+
+En esta encuesta, al igual que todas las encuestas realizadas por CESS, toda la información que se le entregue a las y los participantes es verídica. Esto implica que:
+
+
+
+    • Nunca engañamos a los participantes. Por ejemplo, si le informamos que otro participante está haciendo una elección en base a la que usted debe tomar decisiones, este es realmente el caso.
+
+      
+
+    • No obstante, se simularán distintas situaciones con información, noticias y opiniones que han sido difundidas en redes sociales.
+
+      
+
+    • Mantenemos las promesas hechas a los participantes. Por ejemplo, si prometemos un pago determinado, los y las participantes lo recibirán.
+
+      
+
+    • En caso de que seamos responsables de un error que vaya en perjuicio de los participantes, informaremos y compensaremos a los y las participantes respectivos.
+
+      
+
+    • Diseñamos, conducimos e informamos nuestra investigación de acuerdo con estándares científicos reconocidos y principios éticos. El Estudiante Francisco Villarroel del Instituto de Estudios Avanzados, USACH, ha obtenido aprobación ética para este estudio mediante el Comité de Ética Institucional de la USACH, de acuerdo al informe Nº503/2020
+
+      
+
+    • La metodología que se utilizará en la investigación no implica riesgos para usted. En caso de que existan riesgos, estos podrían deberse a los datos de depósito bancario, que se le solicitarán voluntariamente al final del estudio para poder comenzar económicamente su participación. Nosotros en CESS nos comprometemos a resguardar su privacidad y minimizar al máximo ese riesgo.
+
+      
+
+    • Esta investigación se compensará económicamente a los y las participantes por el tiempo dedicado al estudio. Eso puede variar de estudio en estudio. En esta ocasión el pago por terminar la encuesta es de 3.000 pesos. Para claridad y transparencia en el monto de esas compensaciones, en estudios realizados por CESS siempre se le darán instrucciones claras sobre cómo se genera era compensación antes de la sección correspondiente de la encuesta
+
+      
+
+Tipo de estudio, política de uso de datos y privacidad a la que adherimos:
+
+
+
+    • En esta encuesta, se le preguntará por algunas de sus características socio demográficas como género, edad, ingreso, uso de redes sociales y sobre temas políticos. Por motivos de la adecuada implementación del estudio existen preguntas que usted deberá responder de forma obligatoria, sin que existe una opción “no sabe/ no contesta”. Estas preguntas no son de índole privada y si usted no desea responderlas se puede retirar del estudio.
+
+      
+
+    • Su participación es voluntaria y puede retirarse en cualquier momento durante el cuestionario, por cualquier motivo, simplemente cerrando el navegador. Esto no tendrá ningún costo para usted. Sin embargo, por razones técnicas, sólo podremos realizar el pago a los participantes que hayan completado la encuesta.
+
+      
+
+    • Las conclusiones a las que se llegue con la información recabada, se usarán para escribir la tesis conducente al grado de Magíster en Ciencias Sociales de quien dirige el estudio, así como también para hacer presentaciones en foros académicos. Estos estudios, que presentarán  datos estadísticos agregados de la investigación como por ejemplo promedios y regresiones (no sus datos personales), se pondrán a disposición del público a través de artículos académicos y presentaciones en seminarios y conferencia. Más información en la página web de CESS Santiago www.cess.cl.
+
+      
+
+    • Este proyecto de investigación se encuentra normado por la Ley 19.628 de Protección de Datos de Chile. De acuerdo con estas normas, la Universidad de Santiago de Chile (USACH) certifican el adecuado cumplimiento de las normas y el uso de los datos. Los datos recabados serán compartidos entre los miembros del equipo investigador que incluye a académicos de la USACH.
+
+      
+
+    • Los datos recabados solo se utilizarán con fines académicos, con el objeto de explorar decisiones sobre pensiones. NO serán utilizados con fines comerciales.
+
+      
+
+    • Los datos registrados en este estudio serán anonimizados, extrayendo cualquier información personal de la base de datos que será utilizada para hacer análisis estadísticos. CESS realizará todos los esfuerzos razonables para mantener sus datos confidenciales, por lo que NO se entregarán sus datos personales a nadie fuera del equipo de investigación, excepto en circunstancias muy excepcionales en las que una orden legal nos obligue a entregar esa información. Sus datos privados se almacenarán en una carpeta con clave por el transcurso de 5 años, una vez finalizado el estudio y luego serán borradas permanentemente. Adicionalmente, su nombre, pero no sus decisiones, podrán ser conocidos por las personas involucradas en el proceso administrativo involucrado de este estudio, para lo cual han firmado compromisos de confidencialidad.
+
+      
+
+    • Esta investigación se encuentra financiada por el proyecto FONDECYT N°1171426, “La estructura de la sociabilidad en Chile y sus consecuencias para nuestra convivencia. Análisis longitudinal de redes sociales” Dirigido por el profesor Vicente Espinoza, quien declara junto a Francisco Villarroel no tener conflictos de interés con los resultados de la investigación.
+
+      
+
+Nota: Si tiene alguna pregunta sobre este estudio, contáctenos a través del correo cess@usach.cl, francisco.villarroel.r@usach.cl. Si permanece descontento o desea presentar una queja formal, se puede dirigir al Dr. Claudio Martínez Fernández, Presidente (I) del Comité de Ética de la Universidad de Santiago de Chile. Fono: (56-2) 27180294 / (56-2) 27180293. Email: comitedeetica@usach.cl.
+
+
+
+
+
+Por favor confirme que ha leído y entendido las reglas indicadas arriba.",indique su edad,Antes de que comenzara la pandemia ¿Cuánto es el ingreso promedio en su hogar?,Indique su género - Selected Choice,Indique su género - Otro - Texto,Indique el nivel de estudios más alto logrado,"A
+continuación señala qué tan representado se siente con las
+siguientes frases: - ""En redes sociales pertenezco a una comunidad o comunidades que son parte importante de mi identidad""","A
+continuación señala qué tan representado se siente con las
+siguientes frases: - “En Redes sociales prefiero interactuar con personas que son como yo”","A
+continuación señala qué tan representado se siente con las
+siguientes frases: - “En redes sociales, prefiero interactuar con personas que tienen intereses similares a los míos.”","A
+continuación señala qué tan representado se siente con las
+siguientes frases: - ""En redes sociales puedo confiar en la información que me comparte por redes sociales mi círculo cercano”","A
+continuación señala qué tan representado se siente con las
+siguientes frases: - “Siento que en las redes sociales la gente piensa como yo”","A
+continuación señala qué tan representado se siente con las
+siguientes frases: - “En redes sociales, prefiero interactuar con personas que comparten mis valores”","A
+continuación señala qué tan representado se siente con las
+siguientes frases: - ""En redes sociales me puedo mantener bien informado""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Soy capaz de usar Internet para encontrar la información que necesito""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Soy capaz de utilizar las tecnologías digitales (por ejemplo, móviles, tableta, portátiles, PC) para alcanzar los objetivos que persigo""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Soy capaz de enviar mensajes originales, audio, imágenes o vídeos para expresar mis sentimientos / pensamientos / ideas / opiniones a través de Internet""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Soy más consciente de los problemas globales mediante el uso de Internet""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Estoy más informado con respecto a cuestiones políticas o sociales mediante el uso de internet""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Creo que la participación en Internet es una manera eficaz de involucrarse en temas políticos o sociales""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Creo que la participación a través de Internet es una buena manera de cambiar algo que creo injusto""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Me replanteo mis ideas con respecto a un tema cuando utilizo internet""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Creo que la participación en Internet promueve el compromiso en la vida real""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Comento escritos de otras personas en sitios web de noticias, blogs o redes sociales que visito""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Me gusta colaborar con otros mediante internet más que hacerlo en la vida real""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Asisto a reuniones políticas o foros públicos a nivel local, la ciudad, o asuntos de la escuela convocados a través de las redes sociales o Internet""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""A veces contacto con la administración pública o el gobierno a través en internet sobre cuestiones que me preocupan o interesan""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Pertenezco a grupos en internet que están involucrados en cuestiones políticas o sociales""","Indique su nivel de acuerdo con las siguientes afirmaciones: - “La migración deteriora la cultura chilena""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""El Estado debería tomar control de empresas estratégicas como minería, agua, transporte, servicios básicos”","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Durante el último año, a partir de las movilizaciones sociales de octubre, se han violado sistemáticamente los Derechos Humanos en Chile""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Se debería cobrar más impuesto a los súper ricos""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""El esfuerzo personal es la mejor forma de superar la desigualdad en Chile""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Las AFP deben ser reemplazadas por un sistema de reparto""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Necesitamos mayor presencia policial para mantener el orden público""","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Se debería reconocer la autonomía a la Nación Mapuche”","Indique su nivel de acuerdo con las siguientes afirmaciones: - ""Aceptaría un gobierno autoritario en caso comprobado de terrorismo, delincuencia organizada o revuelta social""","Habitualmente se utilizan los conceptos de ""Izquierda"", ""derecha"" y ""Centro"" para clasificar  los posicionamientos políticos. ¿Usted siente que puede identificarse dentro de ese marco?",Indique cuál es su posición política - 1,"A continuación mostraré cuatro frases que algunas veces hacen que la gente se enoje o se moleste:
+
+
+
+""Tu AFP ha perdido un tercio de tus ahorros por malas decisiones financieras""
+
+""Deportistas profesionales firman contratos por cientos de millones""
+
+""Grandes empresas contaminan el medio ambiente""
+
+""Un nuevo vecino le entrega un afiche que dice 'Comunismo y Vandalismo es lo mismo'”
+
+
+
+
+
+
+
+¿Cuánta molestia le provoca el conjunto de estas frases? - Nada de molestia:Mucha molestia","A continuación mostraré cuatro frases que algunas veces hacen que la gente se enoje o se moleste:
+
+
+
+""Tu AFP ha perdido un tercio de tus ahorros por malas decisiones financieras""
+
+""Deportistas profesionales firman contratos por cientos de millones""
+
+""Grandes empresas contaminan el medio ambiente""
+
+""Un nuevo vecino le entrega un afiche que dice 'El único 18 que celebro es el de octubre'""
+
+ 
+
+
+
+ 
+
+¿Cuánta molestia le provoca el conjunto de estas frases? - Nada de molestia:Mucha Molestia","A continuación mostraré cuatro frases que algunas veces hacen que la gente se enoje o se moleste:
+
+
+
+""Tu AFP ha perdido un tercio de tus ahorros por malas decisiones financieras""
+
+""Deportistas profesionales firman contratos por cientos de millones""
+
+""Grandes empresas contaminan el medio ambiente""
+
+""Un nuevo vecino le entrega un afiche que dice 'El único 18 que celebro es el de octubre'""
+
+ 
+
+ 
+
+
+
+¿Cuánta molestia le provoca el conjunto de estas frases? - Nada de molestia:Mucha molestia","A continuación mostraré cuatro frases que algunas veces hacen que la gente se enoje o se moleste:
+
+
+
+""Tu AFP ha perdido un tercio de tus ahorros por malas decisiones financieras""
+
+""Deportistas profesionales firman contratos por cientos de millones""
+
+""Grandes empresas contaminan el medio ambiente""
+
+""Un nuevo vecino le entrega un afiche que dice 'Comunismo y Vandalismo es lo mismo'”
+
+
+
+
+
+
+
+
+
+¿Cuánta molestia le provoca el conjunto de estas frases? - Nada de molestia:Mucha molestia","A continuación mostraré tres frases que algunas veces hacen que la gente se enoje o se moleste:
+
+
+
+""Tu AFP ha perdido un tercio de tus ahorros por malas decisiones financieras""
+
+""Deportistas profesionales firman contratos por cientos de millones""
+
+""Grandes empresas contaminan el medio ambiente""
+
+
+
+
+
+
+¿Cuánta molestia le provoca el conjunto de estas frases? - Nada de molestia:Mucha molestia","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Contraloría autoriza controles en domicilios sin autorización de los moradores, con fines Sanitarios”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Casi ningún adulto mayor recibirá los beneficios de la campaña liderada por Don Francisco, llamada 'Vamos Chilenos'”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “La patente para testear el Covid-19 se registró en 2015”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Sebastián Piñera es dueño de AFP Habitat”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Constanza Hube: «No hay ningún problema en que Forestal Arauco queme un Parque Nacional, la libertad económica es sagrada ante todo»”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Mujeres retroceden más de diez años su participación en el mercado laboral”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Gobierno de Michelle Bachelet construyó zanjas en Colchane”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Contraloría autoriza controles en domicilios sin autorización de los moradores, con fines Sanitarios”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Cambios masivos de domicilio fueron parte de fraude electoral en elección de Jorge Sharp en municipal de Valparaíso, 2016”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “La patente para testear el Covid-19 se registró en 2015”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Hoy día destruir un bus es gratis y no tiene sanción”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Observadores de Derechos Humanos del INDH detenidos por portar bombas molotov el día del joven combatiente”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Excomandante de la Armada, Edmundo González: “Si nos dejan actuar, terminamos con el terrorismo en 72 horas”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Detienen a militar que encabezaba caravana de narcotraficantes en el norte de Chile”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - ""Contraloría autoriza controles en domicilios sin autorización de los moradores, con fines Sanitarios”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - Proyecto de ley que permite la eutanasia no contempla que el paciente se pueda arrepentir”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “La patente para testear el Covid-19 se registró en 2015”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Sebastián Piñera es dueño de AFP Habitat”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Ya es oficial: el Estado de China pasa a controlar el monopolio del suministro eléctrico del 57% de los chilenos”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - Pepe Mujica: “Chile sería uno de los mejores países para vivir y una potencia económica mundial, si sus ciudadanos se unieran y destituyeran a los políticos que los han robado por años”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Excomandante de la Armada, Edmundo González: “Si nos dejan actuar, terminamos con el terrorismo en 72 horas”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+ 
+
+
+
+¿Cómo las califica? - “Contraloría autoriza controles en domicilios sin autorización de los moradores, con fines Sanitarios”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+ 
+
+
+
+¿Cómo las califica? - ""’Vamos Chilenos’: Casi ningún adulto mayor recibirá los beneficios de la campaña liderada por Don Francisco”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+ 
+
+
+
+¿Cómo las califica? - “La patente para testear el Covid-19 se registró en 2015”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+ 
+
+
+
+¿Cómo las califica? - “Sebastián Piñera es dueño de AFP Habitat”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+ 
+
+
+
+¿Cómo las califica? - “Diputados que realizaron teletrabajo gastaron más de $165 millones en traslado”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+ 
+
+
+
+¿Cómo las califica? - Pepe Mujica: “Chile sería uno de los mejores países para vivir y una potencia económica mundial, si sus ciudadanos se unieran y destituyeran a los políticos que los han robado por años”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+ 
+
+
+
+¿Cómo las califica? - “Gobierno de Michelle Bachelet construyó zanjas en Colchane”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Contraloría autoriza controles en domicilios sin autorización de los moradores, con fines Sanitarios”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Casi ningún adulto mayor recibirá los beneficios de la campaña liderada por Don Francisco, llamada 'Vamos Chilenos'”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “La patente para testear el Covid-19 se registró en 2015”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Sebastián Piñera es dueño de AFP Habitat”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Constanza Hube: «No hay ningún problema en que Forestal Arauco queme un Parque Nacional, la libertad económica es sagrada ante todo»”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Mujeres retroceden más de diez años su participación en el mercado laboral”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Gobierno de Michelle Bachelet construyó zanjas en Colchane”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Contraloría autoriza controles en domicilios sin autorización de los moradores, con fines Sanitarios”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Cambios masivos de domicilio fueron parte de fraude electoral en elección de Jorge Sharp en municipal de Valparaíso, 2016”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “La patente para testear el Covid-19 se registró en 2015”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Hoy día destruir un bus es gratis y no tiene sanción”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Observadores de Derechos Humanos del INDH detenidos por portar bombas molotov el día del joven combatiente”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Excomandante de la Armada, Edmundo González: “Si nos dejan actuar, terminamos con el terrorismo en 72 horas”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Detienen a militar que encabezaba caravana de narcotraficantes en el norte de Chile”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “’Vamos Chilenos’: Casi ningún adulto mayor recibirá los beneficios de la campaña liderada por Don Francisco”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Sebastián Piñera es dueño de AFP Habitat”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Constanza Hube: «No hay ningún problema en que Forestal Arauco queme un Parque Nacional, la libertad económica es sagrada ante todo»”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Mujeres retroceden más de diez años su participación en el mercado laboral”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Gobierno de Michelle Bachelet construyó zanjas en Colchane”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Contraloría autoriza controles en domicilios sin autorización de los moradores, con fines Sanitarios”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Cambios masivos de domicilio fueron parte de fraude electoral en elección de Jorge Sharp en municipal de Valparaíso, 2016”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “La patente para testear el Covid-19 se registró en 2015”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Hoy día destruir un bus es gratis y no tiene sanción”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Observadores de Derechos Humanos del INDH detenidos por portar bombas molotov el día del joven combatiente”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Excomandante de la Armada, Edmundo González: “Si nos dejan actuar, terminamos con el terrorismo en 72 horas”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Detienen a militar que encabezaba caravana de narcotraficantes en el norte de Chile”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Contraloría autoriza controles en domicilios sin autorización de los moradores, con fines Sanitarios”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Cambios masivos de domicilio fueron parte de fraude electoral en elección de Jorge Sharp en municipal de Valparaíso, 2016”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “La patente para testear el Covid-19 se registró en 2015”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Hoy día destruir un bus es gratis y no tiene sanción”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Observadores de Derechos Humanos del INDH detenidos por portar bombas molotov el día del joven combatiente”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “’Vamos Chilenos’: Casi ningún adulto mayor recibirá los beneficios de la campaña liderada por Don Francisco”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Sebastián Piñera es dueño de AFP Habitat”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Constanza Hube: «No hay ningún problema en que Forestal Arauco queme un Parque Nacional, la libertad económica es sagrada ante todo»”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Gobierno de Michelle Bachelet construyó zanjas en Colchane”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Proyecto de ley que permite la eutanasia no contempla que el paciente se pueda arrepentir”","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - ""Pepe Mujica: “'Chile sería uno de los mejores países para vivir y una potencia económica mundial, si sus ciudadanos se unieran y destituyeran a los políticos que los han robado por años'""","A continuación le mostraremos 7 titulares diferentes que rondan en Redes Sociales,  de los cuales hay algunos verdaderos y otros falsos. Ud. deberá señalar si son falsas o verdaderas.
+
+ 
+
+(Al final de esta encuesta se le mostrarán sus resultados)
+
+
+
+¿Cómo las califica? - “Diputados que realizaron teletrabajo gastaron más de $165 millones en traslado”","Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque el considera que el actuar de Carabineros y Militares durante el ""estallido social"" es legítimo, se ajustó a derecho y era lo único que se podía hacer en un contexto declarado de crisis social, y yo no creo eso”
+
+ 
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque el considera que el actuar de Carabineros y Militares durante el ""estallido social"" es legítimo, se ajustó a derecho y era lo único que se podía hacer en un contexto declarado de crisis social, y yo no creo eso”
+
+ 
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-Alegría","Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque el considera que el actuar de Carabineros y Militares durante el ""estallido social"" es legítimo, se ajustó a derecho y era lo único que se podía hacer en un contexto declarado de crisis social, y yo no creo eso”
+
+ 
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque el considera que el actuar de Carabineros y Militares durante el ""estallido social"" es legítimo, se ajustó a derecho y era lo único que se podía hacer en un contexto declarado de crisis social, y yo no creo eso”
+
+ 
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si tuviese un amigo como ese ¿Qué decisión tomaría?,"Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que Piñera debe renunciar porque ha violado los derechos humanos, según informes internacionales de Derechos Humanos, y yo no creo eso.”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que Piñera debe renunciar porque ha violado los derechos humanos, según informes internacionales de Derechos Humanos, y yo no creo eso.”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que Piñera debe renunciar porque ha violado los derechos humanos, según informes internacionales de Derechos Humanos, y yo no creo eso.”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que Piñera debe renunciar porque ha violado los derechos humanos, según informes internacionales de Derechos Humanos, y yo no creo eso.”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si tuviese un amigo como ese ¿Qué decisión tomaría?,"Lea la siguiente situación:
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social Carabineros hizo funcionar centros de tortura para manifestantes, y yo no creo eso”
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social Carabineros hizo funcionar centros de tortura para manifestantes, y yo no creo eso”
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social Carabineros hizo funcionar centros de tortura para manifestantes, y yo no creo eso”
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social Carabineros hizo funcionar centros de tortura para manifestantes, y yo no creo eso”
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si tuviese un amigo como ese ¿Qué decisión tomaría?,"Lea la siguiente situación:
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social llegó un batallón de extranjeros a provocar movilizaciones sociales y la quema del Metro de Santiago, y no creo eso”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social llegó un batallón de extranjeros a provocar movilizaciones sociales y la quema del Metro de Santiago, y no creo eso”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social llegó un batallón de extranjeros a provocar movilizaciones sociales y la quema del Metro de Santiago, y no creo eso”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+ 
+
+ 
+
+“Tengo un amigo que quiero mucho, pero que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social llegó un batallón de extranjeros a provocar movilizaciones sociales y la quema del Metro de Santiago, y no creo eso”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si tuviese un amigo como ese ¿Qué decisión tomaría?,"Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Cada vez que hablamos por redes sociales peleamos muy fuerte porque está convencido que Piñera debe renunciar porque ha violado los derechos humanos, según informes internacionales de Derechos Humanos, y yo no creo creo”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-molestia","Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Cada vez que hablamos por redes sociales peleamos muy fuerte porque está convencido que Piñera debe renunciar porque ha violado los derechos humanos, según informes internacionales de Derechos Humanos, y yo no creo creo”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Cada vez que hablamos por redes sociales peleamos muy fuerte porque está convencido que Piñera debe renunciar porque ha violado los derechos humanos, según informes internacionales de Derechos Humanos, y yo no creo creo”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+ 
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Cada vez que hablamos por redes sociales peleamos muy fuerte porque está convencido que Piñera debe renunciar porque ha violado los derechos humanos, según informes internacionales de Derechos Humanos, y yo no creo creo”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si tuviese un amigo como ese ¿Qué decisión tomaría?,"Lea la siguiente situación:
+
+
+
+ 
+""Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque el considera que el actuar de Carabineros y Militares durante el ""estallido social"" es legítimo, se ajustó a derecho y era lo único que se podía hacer en un contexto declarado de crisis social, y yo no creo eso”
+
+
+
+ 
+
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Rabia-enojo","Lea la siguiente situación:
+
+
+
+ 
+""Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque el considera que el actuar de Carabineros y Militares durante el ""estallido social"" es legítimo, se ajustó a derecho y era lo único que se podía hacer en un contexto declarado de crisis social, y yo no creo eso”
+
+
+
+ 
+
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+
+
+ 
+""Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque el considera que el actuar de Carabineros y Militares durante el ""estallido social"" es legítimo, se ajustó a derecho y era lo único que se podía hacer en un contexto declarado de crisis social, y yo no creo eso”
+
+
+
+ 
+
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+
+
+ 
+""Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque el considera que el actuar de Carabineros y Militares durante el ""estallido social"" es legítimo, se ajustó a derecho y era lo único que se podía hacer en un contexto declarado de crisis social, y yo no creo eso”
+
+
+
+ 
+
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si tuviese un amigo como ese ¿Qué decisión tomaría?,"Lea la siguiente situación:
+
+
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social Carabineros hizo funcionar centros de tortura para manifestantes, y yo no creo eso”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social Carabineros hizo funcionar centros de tortura para manifestantes, y yo no creo eso”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social Carabineros hizo funcionar centros de tortura para manifestantes, y yo no creo eso”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social Carabineros hizo funcionar centros de tortura para manifestantes, y yo no creo eso”
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si tuviese un amigo como ese ¿Qué decisión tomaría?,"Lea la siguiente situación:
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social llegó un batallón de extranjeros a provocar movilizaciones sociales y la quema del Metro de Santiago, y yo no creo eso”
+
+ 
+
+ 
+
+ 
+
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social llegó un batallón de extranjeros a provocar movilizaciones sociales y la quema del Metro de Santiago, y yo no creo eso”
+
+ 
+
+ 
+
+ 
+
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social llegó un batallón de extranjeros a provocar movilizaciones sociales y la quema del Metro de Santiago, y yo no creo eso”
+
+ 
+
+ 
+
+ 
+
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+ 
+
+“Tengo un conocido (amigo de un amigo) con el que estamos en desacuerdo en temas políticos. Una vez peleamos muy fuerte en redes sociales porque está convencido que para el estallido social llegó un batallón de extranjeros a provocar movilizaciones sociales y la quema del Metro de Santiago, y yo no creo eso”
+
+ 
+
+ 
+
+ 
+
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si tuviese un amigo como ese ¿Qué decisión tomaría?,"Lea la siguiente situación:
+
+
+
+ 
+
+""Mi primo siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud  a favor de la inmigración, diciendo que nos aportan con su diversidad cultural, que no existen ciudadanos ilegales y que  vienen a aportar al país.
+
+
+
+Para un almuerzo familiar, mientras vemos las noticias, vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+
+
+ 
+
+""Mi primo siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud  a favor de la inmigración, diciendo que nos aportan con su diversidad cultural, que no existen ciudadanos ilegales y que  vienen a aportar al país.
+
+
+
+Para un almuerzo familiar, mientras vemos las noticias, vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+
+
+ 
+
+""Mi primo siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud  a favor de la inmigración, diciendo que nos aportan con su diversidad cultural, que no existen ciudadanos ilegales y que  vienen a aportar al país.
+
+
+
+Para un almuerzo familiar, mientras vemos las noticias, vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+
+
+ 
+
+""Mi primo siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud  a favor de la inmigración, diciendo que nos aportan con su diversidad cultural, que no existen ciudadanos ilegales y que  vienen a aportar al país.
+
+
+
+Para un almuerzo familiar, mientras vemos las noticias, vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si estuvieses en esta situación ¿Qué harías?,"Lea la siguiente situación:
+
+
+
+ 
+
+ 
+
+""Mi primo siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud frente a la migración, ya que cree que los extranjeros que llegan son delincuentes, y que son demasiados.
+
+
+
+Para un almuerzo familiar, mientras vemos las noticias, vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+
+
+ 
+
+ 
+
+""Mi primo siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud frente a la migración, ya que cree que los extranjeros que llegan son delincuentes, y que son demasiados.
+
+
+
+Para un almuerzo familiar, mientras vemos las noticias, vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+
+
+ 
+
+ 
+
+""Mi primo siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud frente a la migración, ya que cree que los extranjeros que llegan son delincuentes, y que son demasiados.
+
+
+
+Para un almuerzo familiar, mientras vemos las noticias, vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+
+
+ 
+
+ 
+
+""Mi primo siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud frente a la migración, ya que cree que los extranjeros que llegan son delincuentes, y que son demasiados.
+
+
+
+Para un almuerzo familiar, mientras vemos las noticias, vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si estuvieses en esta situación ¿Qué harías?,"Lea la siguiente situación:
+
+ 
+
+ 
+
+""Tengo un amigo que siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición frente a la migración, ya que cree que los extranjeros que llegan son delincuentes, y que son demasiados.
+
+
+
+Para una junta con otros amigos aparece el tema de la inmigración en la conversación, y vuelve a decir su opinión que me compartía antes"".
+
+ 
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+ 
+
+ 
+
+""Tengo un amigo que siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición frente a la migración, ya que cree que los extranjeros que llegan son delincuentes, y que son demasiados.
+
+
+
+Para una junta con otros amigos aparece el tema de la inmigración en la conversación, y vuelve a decir su opinión que me compartía antes"".
+
+ 
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+ 
+
+ 
+
+""Tengo un amigo que siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición frente a la migración, ya que cree que los extranjeros que llegan son delincuentes, y que son demasiados.
+
+
+
+Para una junta con otros amigos aparece el tema de la inmigración en la conversación, y vuelve a decir su opinión que me compartía antes"".
+
+ 
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+ 
+
+ 
+
+""Tengo un amigo que siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición frente a la migración, ya que cree que los extranjeros que llegan son delincuentes, y que son demasiados.
+
+
+
+Para una junta con otros amigos aparece el tema de la inmigración en la conversación, y vuelve a decir su opinión que me compartía antes"".
+
+ 
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder las tres emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si estuvieses en esa situación: ¿Qué harías?,"Lea la siguiente situación:
+
+ 
+
+
+
+""Tengo un amigo que siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud  a favor de la inmigración, diciendo que nos aportan con su diversidad cultural, que no existen ciudadanos ilegales y que  vienen a aportar al país.
+
+
+
+Para una junta con otros amigos aparece el tema de la inmigración en la conversación, y vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+ 
+
+
+
+""Tengo un amigo que siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud  a favor de la inmigración, diciendo que nos aportan con su diversidad cultural, que no existen ciudadanos ilegales y que  vienen a aportar al país.
+
+
+
+Para una junta con otros amigos aparece el tema de la inmigración en la conversación, y vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+ 
+
+
+
+""Tengo un amigo que siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud  a favor de la inmigración, diciendo que nos aportan con su diversidad cultural, que no existen ciudadanos ilegales y que  vienen a aportar al país.
+
+
+
+Para una junta con otros amigos aparece el tema de la inmigración en la conversación, y vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-Ansiedad","Lea la siguiente situación:
+
+ 
+
+
+
+""Tengo un amigo que siempre me envía por Whatsapp mensajes, memes y noticias de temas políticos. A veces es muy insistente con su posición y actitud  a favor de la inmigración, diciendo que nos aportan con su diversidad cultural, que no existen ciudadanos ilegales y que  vienen a aportar al país.
+
+
+
+Para una junta con otros amigos aparece el tema de la inmigración en la conversación, y vuelve a decir su opinión que me compartía antes"".
+
+
+
+ 
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si estuvieses en esa situación: ¿Qué harías?,"Lea la siguiente situación:
+
+ 
+
+""Tengo un primo  que está en desacuerdo sobre cómo se está repartiendo la herencia de nuestra abuela que acaba de fallecer, envíando mensajes al grupo de Whatsapp familiar constantemente sobre el tema. No me gusta su posición ni su actitud.
+
+
+
+En el almuerzo familiar del domingo, cuando todos nos reunimos, vuelve a decir su opinión que nos dió por Whatsapp"".
+
+
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+ 
+
+""Tengo un primo  que está en desacuerdo sobre cómo se está repartiendo la herencia de nuestra abuela que acaba de fallecer, envíando mensajes al grupo de Whatsapp familiar constantemente sobre el tema. No me gusta su posición ni su actitud.
+
+
+
+En el almuerzo familiar del domingo, cuando todos nos reunimos, vuelve a decir su opinión que nos dió por Whatsapp"".
+
+
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+ 
+
+""Tengo un primo  que está en desacuerdo sobre cómo se está repartiendo la herencia de nuestra abuela que acaba de fallecer, envíando mensajes al grupo de Whatsapp familiar constantemente sobre el tema. No me gusta su posición ni su actitud.
+
+
+
+En el almuerzo familiar del domingo, cuando todos nos reunimos, vuelve a decir su opinión que nos dió por Whatsapp"".
+
+
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+ 
+
+""Tengo un primo  que está en desacuerdo sobre cómo se está repartiendo la herencia de nuestra abuela que acaba de fallecer, envíando mensajes al grupo de Whatsapp familiar constantemente sobre el tema. No me gusta su posición ni su actitud.
+
+
+
+En el almuerzo familiar del domingo, cuando todos nos reunimos, vuelve a decir su opinión que nos dió por Whatsapp"".
+
+
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si estuvieses en esa situación: ¿Qué harías?,"Lea la siguiente situación:
+
+ 
+
+""Tengo dos amigos que pelearon entre sí y aún no lo resuelven. Uno de ellos siempre me envía mensajes por whatsapp de lo equivocado que estaba el otro y lo ofendido que se siente, pero creo que se equivoca rotundamente. No me gusta su actitud.
+
+
+
+A los días después nos juntamos a conversar y me vuelve a decir su opinión que me dió por Whatsapp"".
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Enojo-rabia","Lea la siguiente situación:
+
+ 
+
+""Tengo dos amigos que pelearon entre sí y aún no lo resuelven. Uno de ellos siempre me envía mensajes por whatsapp de lo equivocado que estaba el otro y lo ofendido que se siente, pero creo que se equivoca rotundamente. No me gusta su actitud.
+
+
+
+A los días después nos juntamos a conversar y me vuelve a decir su opinión que me dió por Whatsapp"".
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Entusiasmo-alegría","Lea la siguiente situación:
+
+ 
+
+""Tengo dos amigos que pelearon entre sí y aún no lo resuelven. Uno de ellos siempre me envía mensajes por whatsapp de lo equivocado que estaba el otro y lo ofendido que se siente, pero creo que se equivoca rotundamente. No me gusta su actitud.
+
+
+
+A los días después nos juntamos a conversar y me vuelve a decir su opinión que me dió por Whatsapp"".
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Temor-ansiedad","Lea la siguiente situación:
+
+ 
+
+""Tengo dos amigos que pelearon entre sí y aún no lo resuelven. Uno de ellos siempre me envía mensajes por whatsapp de lo equivocado que estaba el otro y lo ofendido que se siente, pero creo que se equivoca rotundamente. No me gusta su actitud.
+
+
+
+A los días después nos juntamos a conversar y me vuelve a decir su opinión que me dió por Whatsapp"".
+
+ 
+
+¿Qué emociones te produce esta situación?
+
+
+
+(Se deben responder todas las emociones. Si no sientes esa emoción, clickee en la flecha de todas formas y muévala hasta el cero) - Tristeza-pena",Si estuvieses en esa situación: ¿Qué harías?,Score
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""Q_RelevantIDDuplicate""}","{""ImportId"":""Q_RelevantIDDuplicateScore""}","{""ImportId"":""Q_RelevantIDFraudScore""}","{""ImportId"":""Q_RelevantIDLastStartDate"",""timeZone"":""UTC""}","{""ImportId"":""QID35""}","{""ImportId"":""QID2""}","{""ImportId"":""QID4""}","{""ImportId"":""QID1""}","{""ImportId"":""QID1_3_TEXT""}","{""ImportId"":""QID3""}","{""ImportId"":""QID8_8""}","{""ImportId"":""QID8_1""}","{""ImportId"":""QID8_2""}","{""ImportId"":""QID8_3""}","{""ImportId"":""QID8_4""}","{""ImportId"":""QID8_5""}","{""ImportId"":""QID8_7""}","{""ImportId"":""QID45_1""}","{""ImportId"":""QID45_4""}","{""ImportId"":""QID45_3""}","{""ImportId"":""QID45_5""}","{""ImportId"":""QID45_7""}","{""ImportId"":""QID45_11""}","{""ImportId"":""QID45_12""}","{""ImportId"":""QID45_13""}","{""ImportId"":""QID45_14""}","{""ImportId"":""QID45_15""}","{""ImportId"":""QID45_16""}","{""ImportId"":""QID45_17""}","{""ImportId"":""QID45_18""}","{""ImportId"":""QID45_19""}","{""ImportId"":""QID7_1""}","{""ImportId"":""QID7_3""}","{""ImportId"":""QID7_4""}","{""ImportId"":""QID7_6""}","{""ImportId"":""QID7_7""}","{""ImportId"":""QID7_8""}","{""ImportId"":""QID7_9""}","{""ImportId"":""QID7_10""}","{""ImportId"":""QID7_11""}","{""ImportId"":""QID5""}","{""ImportId"":""QID78_1""}","{""ImportId"":""QID12_1""}","{""ImportId"":""QID11_1""}","{""ImportId"":""QID39_1""}","{""ImportId"":""QID38_1""}","{""ImportId"":""QID10_1""}","{""ImportId"":""QID80_1""}","{""ImportId"":""QID80_4""}","{""ImportId"":""QID80_9""}","{""ImportId"":""QID80_5""}","{""ImportId"":""QID80_6""}","{""ImportId"":""QID80_7""}","{""ImportId"":""QID80_8""}","{""ImportId"":""QID81_1""}","{""ImportId"":""QID81_2""}","{""ImportId"":""QID81_3""}","{""ImportId"":""QID81_4""}","{""ImportId"":""QID81_5""}","{""ImportId"":""QID81_6""}","{""ImportId"":""QID81_7""}","{""ImportId"":""QID82_1""}","{""ImportId"":""QID82_2""}","{""ImportId"":""QID82_3""}","{""ImportId"":""QID82_4""}","{""ImportId"":""QID82_5""}","{""ImportId"":""QID82_6""}","{""ImportId"":""QID82_7""}","{""ImportId"":""QID83_1""}","{""ImportId"":""QID83_2""}","{""ImportId"":""QID83_4""}","{""ImportId"":""QID83_5""}","{""ImportId"":""QID83_6""}","{""ImportId"":""QID83_7""}","{""ImportId"":""QID83_8""}","{""ImportId"":""QID84_1""}","{""ImportId"":""QID84_4""}","{""ImportId"":""QID84_9""}","{""ImportId"":""QID84_5""}","{""ImportId"":""QID84_6""}","{""ImportId"":""QID84_7""}","{""ImportId"":""QID84_8""}","{""ImportId"":""QID90_1""}","{""ImportId"":""QID90_2""}","{""ImportId"":""QID90_3""}","{""ImportId"":""QID90_4""}","{""ImportId"":""QID90_5""}","{""ImportId"":""QID90_6""}","{""ImportId"":""QID90_7""}","{""ImportId"":""QID90_8""}","{""ImportId"":""QID90_9""}","{""ImportId"":""QID90_10""}","{""ImportId"":""QID90_11""}","{""ImportId"":""QID90_12""}","{""ImportId"":""QID94_1""}","{""ImportId"":""QID94_2""}","{""ImportId"":""QID94_3""}","{""ImportId"":""QID94_4""}","{""ImportId"":""QID94_5""}","{""ImportId"":""QID94_6""}","{""ImportId"":""QID94_7""}","{""ImportId"":""QID96_1""}","{""ImportId"":""QID96_2""}","{""ImportId"":""QID96_3""}","{""ImportId"":""QID96_4""}","{""ImportId"":""QID96_5""}","{""ImportId"":""QID96_8""}","{""ImportId"":""QID96_9""}","{""ImportId"":""QID96_10""}","{""ImportId"":""QID96_12""}","{""ImportId"":""QID96_15""}","{""ImportId"":""QID96_17""}","{""ImportId"":""QID96_18""}","{""ImportId"":""QID51_1""}","{""ImportId"":""QID51_2""}","{""ImportId"":""QID51_4""}","{""ImportId"":""QID51_5""}","{""ImportId"":""QID97""}","{""ImportId"":""QID47_1""}","{""ImportId"":""QID47_2""}","{""ImportId"":""QID47_4""}","{""ImportId"":""QID47_5""}","{""ImportId"":""QID110""}","{""ImportId"":""QID48_1""}","{""ImportId"":""QID48_2""}","{""ImportId"":""QID48_4""}","{""ImportId"":""QID48_5""}","{""ImportId"":""QID99""}","{""ImportId"":""QID52_1""}","{""ImportId"":""QID52_2""}","{""ImportId"":""QID52_4""}","{""ImportId"":""QID52_5""}","{""ImportId"":""QID100""}","{""ImportId"":""QID49_1""}","{""ImportId"":""QID49_4""}","{""ImportId"":""QID49_5""}","{""ImportId"":""QID49_6""}","{""ImportId"":""QID101""}","{""ImportId"":""QID53_1""}","{""ImportId"":""QID53_2""}","{""ImportId"":""QID53_4""}","{""ImportId"":""QID53_5""}","{""ImportId"":""QID102""}","{""ImportId"":""QID50_1""}","{""ImportId"":""QID50_2""}","{""ImportId"":""QID50_4""}","{""ImportId"":""QID50_5""}","{""ImportId"":""QID104""}","{""ImportId"":""QID54_1""}","{""ImportId"":""QID54_2""}","{""ImportId"":""QID54_4""}","{""ImportId"":""QID54_5""}","{""ImportId"":""QID103""}","{""ImportId"":""QID56_1""}","{""ImportId"":""QID56_2""}","{""ImportId"":""QID56_4""}","{""ImportId"":""QID56_5""}","{""ImportId"":""QID74""}","{""ImportId"":""QID59_1""}","{""ImportId"":""QID59_2""}","{""ImportId"":""QID59_4""}","{""ImportId"":""QID59_5""}","{""ImportId"":""QID76""}","{""ImportId"":""QID55_1""}","{""ImportId"":""QID55_2""}","{""ImportId"":""QID55_4""}","{""ImportId"":""QID55_5""}","{""ImportId"":""QID75""}","{""ImportId"":""QID60_1""}","{""ImportId"":""QID60_2""}","{""ImportId"":""QID60_4""}","{""ImportId"":""QID60_5""}","{""ImportId"":""QID77""}","{""ImportId"":""QID62_1""}","{""ImportId"":""QID62_2""}","{""ImportId"":""QID62_4""}","{""ImportId"":""QID62_5""}","{""ImportId"":""QID73""}","{""ImportId"":""QID108_1""}","{""ImportId"":""QID108_2""}","{""ImportId"":""QID108_3""}","{""ImportId"":""QID108_4""}","{""ImportId"":""QID109""}","{""ImportId"":""SC_29RlhtERiGhOjuS""}"
+2021-09-30 14:04:20,2021-09-30 14:14:05,IP Address,200.73.125.99,100,584,True,2021-09-30 14:14:05,R_2uOPgVAYwwnCZ0M,,,,,-36.729400634765625,-72.46649932861328125,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,5,3,7,4,1,8,4,6,6,6,7,6,6,4,5,4,2,2,2,3,2,En desacuerdo,De acuerdo,Muy de acuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,En desacuerdo,Muy de acuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Verdadero,Falso,Falso,,,Verdadero,Verdadero,,,,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,67,6,22,95,1,,,,,,,,,,,,,,,,,,,,,100,,31,100,1,,,,,,4
+2021-09-30 14:04:09,2021-09-30 14:14:17,IP Address,190.20.69.203,100,608,True,2021-09-30 14:14:17,R_1lhpUphzycF2eHt,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,7,6,6,4,1,10,3,7,7,7,7,6,6,7,6,5,3,5,2,1,7,Muy en desacuerdo,De acuerdo,Muy de acuerdo,Muy de acuerdo,De acuerdo,De acuerdo,En desacuerdo,Muy de acuerdo,Muy en desacuerdo,"Sí, puedo clasificarme de esta forma",2,,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,Falso,Falso,Verdadero,,,,Verdadero,Verdadero,,,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,100,,45,97,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,29,,,7,1,5
+2021-09-30 14:04:39,2021-09-30 14:15:23,IP Address,200.89.59.173,100,643,True,2021-09-30 14:15:28,R_3HRGymlH8eqXXUL,,,,,-33.4799041748046875,-70.53389739990234375,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 30 a 40 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Femenino,, Postgrados completos,10,4,10,1,5,10,1,7,7,7,7,2,2,1,5,1,1,4,3,1,4,Muy en desacuerdo,De acuerdo,Muy en desacuerdo,Muy de acuerdo,En desacuerdo,Muy en desacuerdo,Muy en desacuerdo,En desacuerdo,Muy en desacuerdo,"Sí, puedo clasificarme de esta forma",5,,,7,7,,,,,,,,,,,,,,,,Verdadero,Falso,Falso,Falso,Verdadero,Falso,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,,30,100,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,100,,,100,2,,,,,,,,,,,,,,,,,,,,,6
+2021-09-30 14:03:47,2021-09-30 14:15:40,IP Address,45.232.34.25,100,712,True,2021-09-30 14:15:40,R_1cZFGukVec69Xp4,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $448.001 y $1.000.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,2,7,7,4,2,4,5,6,7,7,7,7,7,6,5,4,2,2,1,2,2,En desacuerdo,De acuerdo,Muy de acuerdo,De acuerdo,En desacuerdo,De acuerdo,En desacuerdo,De acuerdo,En desacuerdo,"Sí, puedo clasificarme de esta forma",6,,,,,4,,,,,,,,,,,,,,,Falso,Verdadero,Falso,Verdadero,Falso,Verdadero,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,0,60,20,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,,10,,1,,,,,,,,,,,,,,,,1
+2021-09-30 14:04:03,2021-09-30 14:16:06,IP Address,190.162.149.18,100,722,True,2021-09-30 14:16:06,R_2BahDqGssexIdJ8,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Más de $3.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,1,5,6,8,2,3,5,7,7,7,6,6,6,4,4,3,2,6,1,1,1,En desacuerdo,Muy en desacuerdo,Muy en desacuerdo,En desacuerdo,De acuerdo,Muy en desacuerdo,Muy de acuerdo,De acuerdo,Muy de acuerdo,"Sí, puedo clasificarme de esta forma",7,,,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,,Falso,,Verdadero,,Falso,Falso,Verdadero,,,Verdadero,,,,,,,,,,,,,,,,,,,,,19,19,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,40,0,,,2,,,,,,,,,,,,,,,,6
+2021-09-30 14:04:01,2021-09-30 14:16:49,IP Address,190.44.150.254,100,768,True,2021-09-30 14:16:49,R_4G6o4TKtn8vlomR,,,,,-33.49920654296875,-70.67120361328125,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,2,6,6,6,3,10,5,7,7,1,7,5,5,7,4,3,1,1,4,2,1,Muy en desacuerdo,De acuerdo,Muy de acuerdo,Muy de acuerdo,De acuerdo,De acuerdo,Muy de acuerdo,De acuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,Verdadero,Falso,,Verdadero,,,,Verdadero,,Verdadero,Falso,83,0,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,,,,1,3
+2021-09-30 14:03:53,2021-09-30 14:17:16,IP Address,190.20.31.14,100,802,True,2021-09-30 14:17:17,R_ROcc1JZRlwjsmxb,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Femenino,, Media completa,5,7,7,5,8,8,7,7,7,7,7,7,7,7,6,6,2,3,1,1,1,En desacuerdo,Muy de acuerdo,Muy de acuerdo,Muy de acuerdo,De acuerdo,En desacuerdo,En desacuerdo,Muy de acuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,,Falso,Verdadero,,,,,Falso,Falso,Verdadero,Falso,,,,,,,,,,,,,,,,87,2,16,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,,,,1,,,,,,2
+2021-09-30 14:04:02,2021-09-30 14:17:34,IP Address,201.188.189.51,100,811,True,2021-09-30 14:17:34,R_3R3M7EjlNAAAlzK,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,9,10,9,10,7,9,8,7,7,6,6,6,5,6,6,5,3,4,2,2,3,Muy en desacuerdo,Muy de acuerdo,De acuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,De acuerdo,De acuerdo,En desacuerdo,"Sí, puedo clasificarme de esta forma",4,,,,,5,Verdadero,Verdadero,Falso,Falso,Falso,Verdadero,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,0,0,3,1,,,,,,40,0,0,10,1,,,,,,,,,,,,,,,,,,,,,6
+2021-09-30 14:04:03,2021-09-30 14:17:42,IP Address,186156137141,100,818,True,2021-09-30 14:17:42,R_3hmcH8Ef1IiAsaD,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Más de $3.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,3,8,8,4,1,7,4,7,5,3,7,7,2,1,3,1,1,1,1,2,5,Muy en desacuerdo,De acuerdo,Muy de acuerdo,De acuerdo,En desacuerdo,De acuerdo,En desacuerdo,En desacuerdo,Muy en desacuerdo,"Sí, puedo clasificarme de esta forma",3,,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,Falso,Falso,Falso,Falso,Falso,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,,,,2,,,,,,,,,,,,,,,,,,,,,27,,,25,1,,,,,,6
+2021-09-30 14:03:54,2021-09-30 14:18:04,IP Address,186.20.146.199,100,850,True,2021-09-30 14:18:05,R_1d1fET5S99bwscb,,,,,-33.5802001953125,-70.58270263671875,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,5,8,8,7,2,4,9,7,7,7,7,7,6,2,5,2,6,4,4,3,6,De acuerdo,Muy de acuerdo,Muy de acuerdo,De acuerdo,Muy de acuerdo,En desacuerdo,Muy en desacuerdo,Muy en desacuerdo,Muy en desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,,,Verdadero,,Falso,Verdadero,Falso,Falso,,Falso,,,,,,,,,,,,,,,,,,,,,0,0,0,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,1,3
+2021-09-30 14:05:11,2021-09-30 14:18:05,IP Address,181.43.216.88,100,774,True,2021-09-30 14:18:06,R_27d3u40jYRIWGAb,,,,,-33.5543060302734375,-70.5605010986328125,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $448.001 y $1.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,5,5,6,3,2,8,7,7,7,7,7,7,5,4,4,1,6,2,2,1,1,Muy de acuerdo,Muy de acuerdo,En desacuerdo,En desacuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,,Falso,Falso,Falso,,,,Verdadero,Verdadero,,Verdadero,,,,,,,,,,,2,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,70,,,30,1,,,,,,,,,,,,,,,,,,,,,,,,,,6
+2021-09-30 14:04:01,2021-09-30 14:18:13,IP Address,186.11.113.87,100,852,True,2021-09-30 14:18:14,R_2B4GNYM2Htw1Ztg,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $448.001 y $1.000.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,7,6,6,4,4,5,4,6,6,6,6,6,5,5,5,4,3,3,2,2,2,En desacuerdo,En desacuerdo,De acuerdo,En desacuerdo,En desacuerdo,En desacuerdo,De acuerdo,De acuerdo,De acuerdo,"Sí, puedo clasificarme de esta forma",9,,,,,4,,,,,,,,Verdadero,Verdadero,Falso,Verdadero,Falso,Falso,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,0,1,1,,,,,,,,,,,,,,,,,,,,,27,,15,24,2,,,,,,,,,,,,,,,,3
+2021-09-30 14:04:01,2021-09-30 14:19:37,IP Address,201.219.236.37,100,936,True,2021-09-30 14:19:37,R_vi34bV8qRqRuCqJ,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,3,8,8,3,1,5,1,5,6,4,5,5,2,4,6,2,1,1,1,1,1,De acuerdo,De acuerdo,En desacuerdo,De acuerdo,En desacuerdo,De acuerdo,De acuerdo,Muy en desacuerdo,En desacuerdo,"Sí, puedo clasificarme de esta forma",8,6,,,,,,,,,,,,Verdadero,Verdadero,Falso,Verdadero,Falso,Falso,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,24,1,9,9,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14,6,23,5,1,,,,,,3
+2021-09-30 14:04:02,2021-09-30 14:19:44,IP Address,190163197139,100,942,True,2021-09-30 14:19:45,R_3G1fkkZ26ObncnE,,,,,-33.5171966552734375,-70.76940155029296875,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,5,8,4,1,5,10,8,7,7,7,6,4,6,4,5,4,1,1,1,1,1,De acuerdo,Muy de acuerdo,En desacuerdo,Muy de acuerdo,De acuerdo,Muy de acuerdo,En desacuerdo,En desacuerdo,Muy de acuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,,Verdadero,Verdadero,Falso,Falso,Falso,,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,1,1,1,,,,,,,,,,,,,,,,,,,,,50,1,50,40,1,,,,,,,,,,,6
+2021-09-30 14:04:15,2021-09-30 14:19:46,IP Address,186.20.230.252,100,930,True,2021-09-30 14:19:47,R_1QAWTmq7xlrP7cw,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,8,4,7,2,7,7,7,7,7,7,5,6,5,6,6,4,5,5,3,3,5,Muy en desacuerdo,De acuerdo,Muy de acuerdo,Muy en desacuerdo,En desacuerdo,En desacuerdo,Muy en desacuerdo,Muy en desacuerdo,Muy en desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,6,,,,,,,,,,,,,,,,,,,,,,,Falso,Verdadero,Falso,Verdadero,Verdadero,Verdadero,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,92,,53,86,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,5,,60,1,3
+2021-09-30 14:04:35,2021-09-30 14:19:51,IP Address,186.11.113.243,100,916,True,2021-09-30 14:19:52,R_11daF9xRqDP6NF6,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $448.001 y $1.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,8,10,8,7,4,8,7,7,7,7,7,6,6,7,7,5,4,3,3,1,1,Muy en desacuerdo,Muy de acuerdo,Muy de acuerdo,De acuerdo,En desacuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,En desacuerdo,"Sí, puedo clasificarme de esta forma",8,,,,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,,Falso,Verdadero,,Verdadero,,,Verdadero,,Verdadero,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,92,0,11,80,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,,54,90,1,,,,,,3
+2021-09-30 14:04:31,2021-09-30 14:20:18,IP Address,45239121122,100,946,True,2021-09-30 14:20:18,R_ag75svwneEvr2ud,,,,,-33.614105224609375,-70.58930206298828125,anonymous,ES,,0,25,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,3,10,6,6,4,8,5,7,7,7,7,7,6,6,7,6,2,3,2,2,1,En desacuerdo,Muy de acuerdo,Muy de acuerdo,Muy de acuerdo,De acuerdo,En desacuerdo,En desacuerdo,Muy de acuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Verdadero,Falso,Falso,,,,,Verdadero,,Verdadero,Verdadero,86,0,4,100,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,100,0,0,100,1,,,,,,4
+2021-09-30 14:04:49,2021-09-30 14:20:23,IP Address,201214200239,100,933,True,2021-09-30 14:20:23,R_2PpnFULSdNiYkBp,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,8,9,9,5,1,9,3,7,6,6,6,6,4,1,3,1,2,2,3,1,3,En desacuerdo,Muy de acuerdo,Muy de acuerdo,Muy de acuerdo,De acuerdo,En desacuerdo,Muy en desacuerdo,Muy de acuerdo,Muy en desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Falso,,Verdadero,Falso,Falso,Verdadero,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,91,,,50,2,,,,,,93,,,,1,,,,,,,,,,,,,,,,,,,,,5
+2021-09-30 14:04:58,2021-09-30 14:21:23,IP Address,191.113.46.80,100,985,True,2021-09-30 14:21:24,R_12gMJ3WJA7rCZTn,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,4,8,7,5,3,6,10,7,6,6,6,6,7,4,4,2,2,2,1,1,1,Muy en desacuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,En desacuerdo,De acuerdo,Muy de acuerdo,De acuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,,,Verdadero,Verdadero,Falso,,Verdadero,Verdadero,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,68,1,,,,,,,,,,,,,,,,,,,,,,,,,,50,0,30,10,1,,,,,,,,,,,,,,,,,,,,,5
+2021-09-30 14:04:10,2021-09-30 14:21:30,IP Address,186.104.69.48,100,1039,True,2021-09-30 14:21:31,R_2cAX34Tj1JAe1s3,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $448.001 y $1.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,5,8,8,8,5,6,4,7,7,6,7,7,7,5,6,4,3,1,3,1,1,Muy en desacuerdo,De acuerdo,De acuerdo,De acuerdo,En desacuerdo,De acuerdo,En desacuerdo,Muy de acuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,,3,,,,,,,,,,,,,,,,,,,,,,Verdadero,Verdadero,Falso,Falso,Verdadero,Falso,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,78,,88,2,1,,,,,,,,,,,,,,,,,,,,,85,,,4,1,,,,,,,,,,,,,,,,6
+2021-09-30 14:05:49,2021-09-30 14:21:38,IP Address,186.11.81.175,100,948,True,2021-09-30 14:21:38,R_1DZo13mNwvZQgiW,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,3,6,7,6,6,6,4,6,6,5,4,4,4,3,5,2,2,1,1,2,1,Muy en desacuerdo,De acuerdo,Muy de acuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,En desacuerdo,De acuerdo,En desacuerdo,"Sí, puedo clasificarme de esta forma",3,,4,,,,Falso,Verdadero,Falso,Falso,Verdadero,Falso,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,,40,30,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,,5,,1,2
+2021-09-30 14:03:59,2021-09-30 14:21:47,IP Address,181.43.89.69,100,1068,True,2021-09-30 14:21:48,R_2P54O0KY10hEYmN,,,,,-33.49920654296875,-70.67120361328125,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Femenino,, Media completa,3,4,7,3,3,10,4,7,6,7,7,7,6,3,4,4,7,2,1,1,1,En desacuerdo,De acuerdo,Muy de acuerdo,Muy de acuerdo,En desacuerdo,En desacuerdo,En desacuerdo,De acuerdo,En desacuerdo,"Sí, puedo clasificarme de esta forma",6,,,,,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,,Verdadero,,Verdadero,,,Falso,Verdadero,,Verdadero,Verdadero,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,3
+2021-09-30 14:04:35,2021-09-30 14:22:10,IP Address,170238202119,100,1055,True,2021-09-30 14:22:11,R_2vYCIQVDO2N9mLq,,,,,-33.73199462890625,-70.7418975830078125,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,6,8,7,6,7,8,8,6,6,5,6,6,6,6,6,5,2,3,2,1,1,En desacuerdo,De acuerdo,Muy de acuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,En desacuerdo,De acuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,,,Falso,,Verdadero,Verdadero,Falso,,,Verdadero,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,70,0,30,50,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,0,5,40,1,5
+2021-09-30 14:06:49,2021-09-30 14:23:48,IP Address,190.101.25.238,100,1019,True,2021-09-30 14:23:49,R_43o2LtspwsutJIt,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,1,5,8,6,1,1,5,6,6,1,3,3,4,4,3,5,1,1,1,1,1,En desacuerdo,De acuerdo,Muy de acuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,De acuerdo,De acuerdo,Muy en desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,1,,,,,,,,,,,,,,,,,,,,,,,Falso,Falso,Verdadero,Verdadero,Falso,Verdadero,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,,,,1,,,,,,60,,,35,1,,,,,,,,,,,,,,,,,,,,,1
+2021-09-30 14:04:01,2021-09-30 14:23:51,IP Address,200120246136,100,1189,True,2021-09-30 14:23:51,R_vGFI8IBRl22agZr,,,,,-33.593505859375,-71.625701904296875,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,6,7,7,10,1,8,8,7,7,5,7,7,7,5,5,5,1,2,2,1,1,En desacuerdo,Muy de acuerdo,Muy de acuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,En desacuerdo,De acuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Falso,,,,,Verdadero,,Falso,Verdadero,Falso,Verdadero,,,,,,,,,,,,,,,,,,,,71,0,,75,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,82,0,,,1,,,,,,,,,,,,,,,,4
+2021-09-30 14:04:37,2021-09-30 14:26:05,IP Address,201219233161,100,1288,True,2021-09-30 14:26:05,R_bxr649y3zeKivlf,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,1,9,9,6,3,8,7,7,7,7,6,6,2,2,3,5,1,3,1,4,1,Muy en desacuerdo,De acuerdo,En desacuerdo,Muy de acuerdo,En desacuerdo,Muy de acuerdo,De acuerdo,De acuerdo,En desacuerdo,"Sí, puedo clasificarme de esta forma",6,,,3,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,,Falso,,Falso,,Verdadero,Verdadero,Falso,,,Verdadero,,,,,,,,,,,,,,,,,,,,,40,0,20,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,0,0,20,1,,,,,,3
+2021-09-30 14:04:14,2021-09-30 14:26:22,IP Address,190.164.39.136,100,1327,True,2021-09-30 14:26:22,R_2rTBRWAXxgAQ0JH,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $448.001 y $1.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,7,9,7,5,2,7,7,7,6,5,6,4,5,4,6,5,3,4,5,2,1,Muy en desacuerdo,De acuerdo,Muy de acuerdo,De acuerdo,En desacuerdo,De acuerdo,De acuerdo,Muy de acuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,4,,,,,,,,,,,,,,,,,,,,,,,Verdadero,Verdadero,Falso,Verdadero,Verdadero,Verdadero,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,65,0,20,50,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,0,15,75,1,,,,,,,,,,,,,,,,3
+2021-09-30 14:04:08,2021-09-30 14:26:24,IP Address,168196203116,100,1335,True,2021-09-30 14:26:24,R_z1kngeTgGGW72UN,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,5,7,5,2,2,6,4,6,7,1,6,5,6,5,7,3,1,1,5,1,6,Muy en desacuerdo,En desacuerdo,De acuerdo,Muy en desacuerdo,En desacuerdo,Muy en desacuerdo,Muy en desacuerdo,Muy de acuerdo,De acuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,Falso,Falso,,,,Falso,,Falso,Falso,,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,0,0,15,1,,,,,,,,,,,,,,,,,,,,,,,,,,15,10,5,20,1,6
+2021-09-30 14:15:32,2021-09-30 14:26:41,IP Address,201219236210,100,669,True,2021-09-30 14:26:42,R_USKNoPkRhIfK3f3,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,$224.000 o menos líqudo,Masculino,, Media completa,6,8,8,8,5,8,7,7,6,7,7,6,6,6,6,5,4,4,5,1,2,En desacuerdo,En desacuerdo,Muy de acuerdo,Muy de acuerdo,De acuerdo,Muy de acuerdo,Muy de acuerdo,Muy de acuerdo,De acuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,,Verdadero,Verdadero,,Verdadero,,Falso,Falso,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,100,0,30,80,1,,,,,,,,,,,,,,,,,,,,,,,,,,100,0,,80,1,,,,,,,,,,,,,,,,,,,,,4
+2021-09-30 14:14:42,2021-09-30 14:28:05,IP Address,181.203.99.40,100,803,True,2021-09-30 14:28:05,R_3FLtyUKgNQSWVBG,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $448.001 y $1.000.000 líquido,Masculino,, Media completa,3,7,8,8,5,7,7,7,7,6,5,5,3,2,4,3,1,4,1,1,1,Muy en desacuerdo,De acuerdo,De acuerdo,En desacuerdo,De acuerdo,Muy en desacuerdo,En desacuerdo,De acuerdo,De acuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,6,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Falso,Falso,Verdadero,Verdadero,Falso,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,0,0,50,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,0,0,40,1,,,,,,4
+2021-09-30 14:08:25,2021-09-30 14:28:16,IP Address,190.22.64.7,100,1191,True,2021-09-30 14:28:17,R_1dv4qQCHhQZL04m,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,1,7,8,8,1,6,9,7,7,7,7,7,6,4,7,6,4,1,1,1,1,De acuerdo,De acuerdo,De acuerdo,Muy de acuerdo,De acuerdo,De acuerdo,En desacuerdo,Muy de acuerdo,De acuerdo,"Sí, puedo clasificarme de esta forma",5,,,,,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Verdadero,Falso,,,,,Falso,Falso,,Verdadero,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,,,,1,,,,,,,,,,,,,,,,80,,,,1,,,,,,,,,,,3
+2021-09-30 14:07:21,2021-09-30 14:28:58,IP Address,201189109201,100,1297,True,2021-09-30 14:28:58,R_BzFt1WLMuIUAHux,,,,,-33.614105224609375,-70.58930206298828125,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,$224.000 o menos líqudo,Femenino,, Educación superior Universitaria/Técnica incompleta,6,10,8,1,4,9,5,6,7,5,7,5,5,4,5,5,5,1,4,6,5,Muy en desacuerdo,De acuerdo,De acuerdo,Muy de acuerdo,En desacuerdo,En desacuerdo,De acuerdo,Muy de acuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,,Falso,Falso,,,Falso,,,Verdadero,Verdadero,Verdadero,,,,,,,,,,,,,,,,,,,,53,16,30,25,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,72,0,25,29,1,,,,,,,,,,,,,,,,,,,,,5
+2021-09-30 14:05:51,2021-09-30 14:18:55,IP Address,181.43.242.52,100,783,True,2021-09-30 14:33:57,R_1FFHinhVmQ4kChr,,,,,-33.5171966552734375,-70.76940155029296875,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,5,8,8,5,3,7,4,6,7,5,6,5,5,5,4,2,4,3,4,4,1,De acuerdo,De acuerdo,De acuerdo,Muy de acuerdo,En desacuerdo,En desacuerdo,En desacuerdo,De acuerdo,De acuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,Verdadero,Verdadero,Falso,,Verdadero,Verdadero,,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,29,0,7,0,1,61,0,0,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,5
+2021-09-30 14:04:14,2021-09-30 14:18:56,IP Address,181.226.244.13,100,882,True,2021-09-30 14:33:58,R_2TtpuFeuCsBYh2Z,,,,,-40.9185028076171875,-73.16629791259765625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,5,6,6,10,2,8,9,7,7,5,6,6,1,2,3,4,1,1,1,2,1,En desacuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,Muy en desacuerdo,En desacuerdo,"Sí, puedo clasificarme de esta forma",8,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Verdadero,Falso,Falso,Falso,Falso,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,0,0,10,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,10,0,0,1,4
+2021-09-30 14:03:53,2021-09-30 14:19:12,IP Address,186.107.3.223,100,919,True,2021-09-30 14:34:15,R_bKP9N23h3N1pPKp,,,,,-33.414398193359375,-70.6490020751953125,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,2,9,10,4,2,10,7,7,7,5,5,7,3,4,5,3,1,2,4,3,4,En desacuerdo,De acuerdo,Muy de acuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,De acuerdo,Muy de acuerdo,Muy en desacuerdo,"Sí, puedo clasificarme de esta forma",3,,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Verdadero,Verdadero,,,Verdadero,,,Verdadero,,Falso,Verdadero,50,22,67,82,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,86,2,75,77,1,,,,,,,,,,,,,,,,3
+2021-10-06 05:25:56,2021-10-06 05:45:01,IP Address,168.196.203.27,100,1144,True,2021-10-06 05:45:01,R_BDobBY0ojkZ4QUx,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $448.001 y $1.000.000 líquido,Masculino,, Educación superior Universitaria/Técnica completa,3,6,5,3,5,5,8,6,6,4,6,7,6,4,5,5,3,3,2,2,3,En desacuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,,,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Falso,Falso,Verdadero,,Falso,,Falso,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,11,9,11,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,23,16,0,0,1,7
+2021-09-30 14:04:25,2021-09-30 14:07:22,IP Address,201219234220,14,177,False,2021-10-07 14:07:23,R_2pY7UDTOq5xLhMF,,,,,,,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $448.001 y $1.000.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,4,9,9,9,7,10,10,7,7,7,7,7,7,7,7,7,7,7,7,7,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+2021-09-30 14:07:59,2021-09-30 14:24:26,IP Address,186.11.47.72,16,987,False,2021-10-07 14:24:27,R_3lM2xu1AHea3DF8,,,,,,,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Femenino,, Educación superior Universitaria/Técnica incompleta,3,7,8,4,2,7,4,7,7,7,6,6,5,2,3,2,1,1,1,1,1,Muy en desacuerdo,En desacuerdo,En desacuerdo,Muy de acuerdo,Muy de acuerdo,Muy de acuerdo,Muy de acuerdo,Muy en desacuerdo,Muy de acuerdo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+2021-09-30 14:04:16,2021-09-30 14:26:13,IP Address,45239122144,37,1317,False,2021-10-07 14:26:14,R_308empK4YBi9Bab,,,,,,,anonymous,ES,,0,25,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $224.001 a $448.000 líquido,Masculino,, Educación superior Universitaria/Técnica incompleta,5,6,8,7,4,7,10,7,7,5,5,5,5,5,4,4,1,2,4,1,1,En desacuerdo,De acuerdo,Muy de acuerdo,Muy de acuerdo,De acuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,De acuerdo,"Sí, puedo clasificarme de esta forma",3,,,,,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+2021-10-08 11:36:48,2021-10-08 11:44:23,IP Address,200.89.58.100,100,454,True,2021-10-08 11:44:23,R_QoVYOSyD9zsHkGJ,,,,,-33.4799041748046875,-70.53389739990234375,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 30 a 40 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Femenino,, Postgrados completos,8,6,9,3,7,3,1,7,7,7,7,7,7,7,7,7,7,7,7,7,7,Muy en desacuerdo,En desacuerdo,En desacuerdo,Muy de acuerdo,De acuerdo,En desacuerdo,Muy en desacuerdo,De acuerdo,Muy en desacuerdo,"Sí, puedo clasificarme de esta forma",6,,,7,,,,,,,,,,,,,,,,,Verdadero,Verdadero,Falso,Falso,Falso,Falso,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,71,,36,85,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,,9,100,2,,,,,,5
+2021-10-08 11:36:16,2021-10-08 11:45:45,IP Address,207.248.207.91,100,568,True,2021-10-08 11:45:45,R_1LYVweAxxoQYwZn,,,,,-34.6343994140625,-71.36280059814453125,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $448.001 y $1.000.000 líquido,Masculino,, Educación superior Universitaria/Técnica completa,3,9,9,3,3,5,3,7,7,6,6,6,7,4,5,3,3,1,7,6,5,Muy en desacuerdo,En desacuerdo,Muy de acuerdo,En desacuerdo,De acuerdo,Muy en desacuerdo,Muy en desacuerdo,Muy de acuerdo,Muy en desacuerdo,"Sí, puedo clasificarme de esta forma",6,,,,,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,,Falso,,,,Verdadero,Falso,Falso,Falso,,Verdadero,,,,,,,,,,,,,,,,0,0,0,51,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,47,0,0,16,1,5
+2021-10-08 11:36:20,2021-10-08 11:45:48,IP Address,181.43.216.61,100,567,True,2021-10-08 11:45:48,R_2U0gObCdYMeF3jH,,,,,-33.5543060302734375,-70.5605010986328125,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 41 a 65 años cumplidos,Más de $3.000.000 líquido,Masculino,, Postgrados completos,7,8,7,3,4,6,7,6,5,6,7,7,7,5,5,5,6,3,5,3,5,En desacuerdo,De acuerdo,Muy en desacuerdo,En desacuerdo,De acuerdo,Muy en desacuerdo,Muy de acuerdo,Muy en desacuerdo,De acuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,,Verdadero,,Verdadero,Falso,,Falso,,Falso,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,49,20,64,1,,,,,,,,,,,,,,,,,,,,,29,8,40,20,2,,,,,,,,,,,,,,,,,,,,,4
+2021-10-08 11:36:44,2021-10-08 11:46:16,IP Address,181.43.131.9,100,571,True,2021-10-08 11:46:16,R_1GVmnuMhEuZasba,,,,,-33.465301513671875,-70.59369659423828125,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 41 a 65 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Femenino,, Postgrados completos,8,3,8,9,5,6,1,7,7,5,4,4,1,4,2,1,6,2,1,4,5,Muy en desacuerdo,Muy de acuerdo,En desacuerdo,En desacuerdo,En desacuerdo,Muy en desacuerdo,En desacuerdo,En desacuerdo,En desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,4,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Falso,Falso,Falso,Falso,Falso,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,4
+2021-10-08 11:37:26,2021-10-08 11:46:41,IP Address,186156130222,100,555,True,2021-10-08 11:46:41,R_3psbrfOS2WQj7mt,,,,,-33.4512939453125,-70.6652984619140625,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 18 a 29 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Masculino,, Postgrados incompletos,1,1,1,1,1,1,9,7,7,7,7,7,6,6,7,6,7,2,3,3,7,Muy en desacuerdo,De acuerdo,De acuerdo,Muy de acuerdo,Muy en desacuerdo,Muy de acuerdo,De acuerdo,Muy de acuerdo,Muy en desacuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,,Falso,Falso,Falso,,Falso,,Falso,,,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,100,95,94,98,1,,,,,,,,,,,100,6,81,100,1,,,,,,,,,,,,,,,,5
+2021-10-08 11:36:38,2021-10-08 11:46:49,IP Address,190102252252,100,611,True,2021-10-08 11:46:50,R_7OsbVJKkIRPrM89,,,,,-36.83349609375,-73.04869842529296875,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 41 a 65 años cumplidos,Entre $1.000.001 a $3.000.000 líquido,Masculino,, Postgrados completos,5,5,3,3,3,5,1,5,5,5,7,5,3,3,5,2,1,1,4,5,1,Muy en desacuerdo,En desacuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,En desacuerdo,De acuerdo,Muy en desacuerdo,"Sí, puedo clasificarme de esta forma",5,,,,,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Verdadero,,Falso,,,Falso,Verdadero,,Falso,,Falso,Verdadero,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,41,0,,54,1,,,,,,41,,,44,1,,,,,,,,,,,,,,,,,,,,,5
+2021-10-08 11:37:46,2021-10-08 11:49:20,IP Address,200.86.1.215,100,694,True,2021-10-08 11:49:21,R_1gHAybpPlM6CT3g,,,,,-33.0081024169921875,-71.5196990966796875,anonymous,ES,,0,0,,"Sí, he leído y entendido las reglas. Chile, 2021",Entre 41 a 65 años cumplidos,Más de $3.000.000 líquido,Masculino,, Postgrados completos,10,8,8,7,5,5,9,7,7,7,7,7,5,5,5,5,5,4,3,3,2,Muy en desacuerdo,Muy en desacuerdo,En desacuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,De acuerdo,No. No soy ni de izquierda ni de derecha ni de centro,,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Falso,Verdadero,,,Falso,,Falso,Falso,Falso,Falso,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,50,50,48,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,4
