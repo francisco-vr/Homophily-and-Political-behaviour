@@ -39,9 +39,9 @@ setwd("~/Documentos/Git/Master_Thesis/Block Randomization/")
 #}
 
 #args <- as.vector(t(sim.data[i, ]))
-if(length(args) != 22){
-  stop()
-}
+#if(length(args) != 22){
+#  stop()
+#}
 
 # Load data
 #load(file="/var/www/html/new.RData")
@@ -89,13 +89,14 @@ args<-as.numeric(args)
 
 DigitCount <-sum(args[9:22])
 
-DigiCit <-ifelse(DigitCount<=56,0,1)
+DigiCit <-ifelse(DigitCount>=50,1,0)
 
 # Homofilia política
 
 HomoCount <-sum(args[2:8])
 
-HomoIndex <-ifelse(HomoCount<=39,0,1)
+HomoIndex <-ifelse(HomoCount>=33,1,0)
+
 
 #División de bases y guardado
 

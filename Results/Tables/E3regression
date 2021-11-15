@@ -1,0 +1,28 @@
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: jue, nov 11, 2021 - 09:46:50
+\begin{table}[!htbp] \centering 
+  \caption{Mantención o ruptura de lazos} 
+  \label{tbl:E3Regre} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+\\[-1.8ex] & T.1 \\ 
+\hline \\[-1.8ex] 
+ jdk & 0.334 \\ 
+  & (0.685) \\ 
+  hola & 0.334 \\ 
+  & (0.685) \\ 
+  quetal & $-$0.377 \\ 
+  & (0.668) \\ 
+  Baja Homofilia & $-$0.134 \\ 
+  & (0.518) \\ 
+ \hline \\[-1.8ex] 
+Observations & 79 \\ 
+Log Likelihood & $-$53.767 \\ 
+Akaike Inf. Crit. & 115.534 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{l}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\ 
+\end{tabular} 
+\end{table} 

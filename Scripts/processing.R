@@ -17,7 +17,7 @@ ipak <- function(pkg){
 
 # usage
 packages <- c("tidyverse","dplyr","haven","ggplot2","readxl","summarytools", "patchwork","stringr",
-              "tidyr","kableExtra","psych", "MASS", "foreign")
+              "tidyr","kableExtra","psych", "MASS", "foreign","wesanderson","ggpubr", "Rmisc")
 ipak(packages)
 
 #crosstab funtion
@@ -26,16 +26,24 @@ source("http://pcwww.liv.ac.uk/~william/R/crosstab.r")
 
 ## Load data ##
 
-thesis <-read.csv("Data/InputData/test2.csv")
+thesis <-read.csv("Data/InputData/test3.csv")
 
-## SELECT VARIABLES ##  
+# select just the valid surveys
 
-thesis<-dplyr::select(thesis, Age:SC0)
+thesis <-thesis%>%
+  slice(-c(1,2))
+
+thesis <-filter(thesis, Consent=='1')%>%
+  dplyr::filter(Finished=="1")
+
+thesis <-dplyr::select(thesis, Age:SC0)
+
 
 # Eliminate two rows
 
 thesis <-thesis%>%
-  slice(-c(1,2))
+  slice(-c(69,71,72,73,74,75,76))
+
 
 ## Create three new variables: Homophily index, digital citizenship and political position
 
@@ -57,17 +65,41 @@ thesis$DigitIndex <-ifelse(thesis$DigiCount<=56,0,1)
 table(thesis$HomoIndex)
 table(thesis$DigitIndex)
 
-## Political position
+table(thesis$DigitIndex)
+
+### Recode personal atributes ####
+
+## Age ##
+
+thesis <-mutate(thesis, AgeRecod = dplyr::recode(thesis$Age, "1" = "18 a 29 años","2" = "30 a 40 años","3" = "41 a 65 años",
+                                                 "4" = "+66 años"))
+table(thesis$AgeRecod)
+
+## Education ##
+
+# Waiting final DF
+
+## Income ##
+
+thesis <-mutate(thesis, IncomeRecod = dplyr::recode(thesis$NivEco, "1" = "Menos de $224.000", "2" = "Entre $224.001 - $448.000",
+                                                 "3" = "Ente $448.001 y $1.000.000", "4" = "Entre $1.000.001 - $3.000.000","5" = "Más de $3.000.000"))
+table(thesis$IncomeRecod)
+
+## Genre ##
+
+thesis <-mutate(thesis, GenRecod = dplyr::recode(thesis$Genre, "1" = "Masculino", "2" = "Femenino", "3" = "Otro"))
+table(thesis$GenRecod)
+
+## Political position ##
 
 # recode self position
 
-thesis <-mutate(thesis, IdeoRec = car::recode(thesis$Ideolo_1, "1:4 = 1; 5:6 = 2; 7:9 = 3"))
+thesis <-mutate(thesis, IdeoRec = car::recode(thesis$Ideolo_1, "1:4 = 1; 5:6 = 2; 7:9 = 3; 20 = 3")) 
+# Edit in final DF. "20" shouldn't exist
 thesis <-mutate(thesis, IdeoRec = dplyr::recode(thesis$IdeoRec, "1" = "Izquierda","2" = "centro","3" = "Derecha"))
 table(thesis$IdeoRec)
 
-thesis<-mutate(thesis, identity = dplyr::recode(thesis$IdePol,
-                                                "No. No soy ni de izquierda ni de derecha ni de centro" = "Ninguno",
-                                                "Sí, puedo clasificarme de esta forma" = ""))
+thesis<-mutate(thesis, identity = dplyr::recode(thesis$IdePol, "28" = "Ninguno","1" = ""))
 
 #Merge with "no ideology" column
 
@@ -99,7 +131,7 @@ thesis$E1Treat <- ifelse(thesis$E1T1a_1!='','Afin',
 
 # Merge experiment 1 outcomes
 
-nueva <-dplyr::select(thesis, E1T1a_1,E1T1b_1,E1T2a_1,E1T2b_1,E1TC_1,E1Treat)
+#nueva <-dplyr::select(thesis, E1T1a_1,E1T1b_1,E1T2a_1,E1T2b_1,E1TC_1,E1Treat)
 
 
 
@@ -109,6 +141,7 @@ nueva <-dplyr::select(thesis, E1T1a_1,E1T1b_1,E1T2a_1,E1T2b_1,E1TC_1,E1Treat)
 
 thesis$E2Treat <- ifelse(thesis$E2T1a_1!='','Afin',
                          ifelse(thesis$E2T1b_1!='','Afin',
+                                ifelse(thesis$E2T2b_2!='','Opuesto',
                                 ifelse(thesis$E2T1c_1!='','Afin',
                                        ifelse(thesis$E2T1c_1!='','Afin',
                                               ifelse(thesis$E2T1d_1!='','Afin',
@@ -118,8 +151,8 @@ thesis$E2Treat <- ifelse(thesis$E2T1a_1!='','Afin',
                                                             ifelse(thesis$E2T2c_1!='','Opuesto',
                                                                    ifelse(thesis$E2T2b_3!='','Opuesto',
                                                                    ifelse(thesis$E2TC_12!='','Control',
-                                                                          ifelse(thesis$E2TC_2!='','Control',NA))))))))))))
-
+                                                                          ifelse(thesis$E2TC_6!='','Control',
+                                                                          ifelse(thesis$E2TC_2!='','Control',NA))))))))))))))
 table(thesis$E2Treat)
 
 ## Biding outcomes Experiment 3
@@ -142,8 +175,8 @@ thesis$E3 <-paste(thesis$E3T1a2, thesis$E3T1b2, thesis$E3T2a2, thesis$E3T2b2, th
                   thesis$E3T3b2, thesis$E3T4a2, thesis$X.E3T4b2)
 thesis$E3 <-as.numeric(thesis$E3)
 
-nueva <-data_frame(thesis$E3T1a2, thesis$E3T1b2, thesis$E3T2a2, thesis$E3T2b2, thesis$E3T3a2,
-                 thesis$E3T3b2, thesis$E3T4a2, thesis$X.E3T4b2, thesis$E3, thesis$E3Treat)
+#nueva <-data_frame(thesis$E3T1a2, thesis$E3T1b2, thesis$E3T2a2, thesis$E3T2b2, thesis$E3T3a2,
+#                thesis$E3T3b2, thesis$E3T4a2, thesis$X.E3T4b2, thesis$E3, thesis$E3Treat)
 
 
 # Merges emotions 
@@ -151,9 +184,6 @@ nueva <-data_frame(thesis$E3T1a2, thesis$E3T1b2, thesis$E3T2a2, thesis$E3T2b2, t
 thesis$E3Angry <-paste(thesis$E3T1a1_1, thesis$E3T1b1_1, thesis$E3T2a1_1, thesis$E3T2b1_1,
                        thesis$E3T3a1_1, thesis$E3T3b1_1, thesis$E3T4a1_1, thesis$E3T4b1_1)
 thesis$E3Angry <-as.numeric(thesis$E3Angry)
-
-mean(thesis$E3Angry, na.rm = T)
-sd(thesis$E3Angry, na.rm = T)
 
 thesis$E3Joy <-paste(thesis$E3T1a1_2, thesis$E3T1b1_2, thesis$E3T2a1_2, thesis$E3T2b1_2,
                      thesis$E3T3a1_4, thesis$E3T3b1_2, thesis$E3T4a1_2, thesis$E3T4b1_2)
@@ -205,122 +235,11 @@ thesis$E4Sad <-paste(thesis$E3T1a1_5, thesis$E3T1b1_5, thesis$E3T2a1_5, thesis$E
                      thesis$E3T3a1_6, thesis$E3T3b1_5, thesis$E3T4a1_5, thesis$E3T4b1_5)
 thesis$E4Sad<-as.numeric(thesis$E3Sad)
 
-
-######################
-### first outcomes ###
-######################
-
-## ARREGLAR LOS GROUP_BY DE CASI TODOS (MENOS LOS DOS PRIMEROS EXPERIMENTOS) PORQUE NO FUNCIONAN
-
-## Experiment 1 ##
-
-E1 <-thesis%>%
-  dplyr::group_by(E1Treat)%>%
-  dplyr::summarise(mean1 = mean(E1, na.rm = T), desviacion = sd(thesis$E1, na.rm = T))
-
-## Experiment 2 ##
-thesis$SC0 <-as.numeric(thesis$SC0)
-
-E2 <-thesis%>%
-  group_by(E2Treat)%>%
-  summarise(mean2 = mean(SC0, na.rm = T),
-            SD = sd(thesis$E1, na.rm = T))
-
-## Experiment 3 ##
-
-## Mantain or broke ties ##
-
-E3 <-ctable(thesis$E3, thesis$E3Treat, prop = "c")
-
-#Emotions #
-
-# Angry
-E3Angry <-thesis%>%
-  group_by(E3Treat)%>%
-  summarise(media = mean(thesis$E3Angry, na.rm = T))
-
-# Joy-Hapiness
-
-E3Joy <-thesis%>%
-  dplyr::group_by(E3Treat)%>%
-  dplyr::summarise(media = mean(thesis$E3Joy, na.rm = T), DE = sd(thesis$E3Joy, na.rm = T))
-
-# sadness
-
-E3Sad <-thesis%>%
-  dplyr::group_by(E3Treat)%>%
-  dplyr::summarise(media = mean(thesis$E3Sad, na.rm = T), DE = sd(thesis$E3Sad, na.rm = T))
-
-# Fear
-
-E3Fear <-thesis%>%
-  dplyr::group_by(E3Treat)%>%
-  dplyr::summarise(media = mean(thesis$E3Fear, na.rm = T), DE = sd(thesis$E3Fear, na.rm = T))
-
-
-## Experiment 4 ##
-
-# get a talk or avoid conversation
-
-E4 <-ctable(thesis$E4, thesis$E4Treat, prop = "c", chisq = T)
-
-# Emotions exp. 4
-
-# Angry
-
-E4Angry <-thesis%>%
-  dplyr::group_by(E4Treat)%>%
-  dplyr::summarise(media = mean(thesis$E4Angry, na.rm = T), SD = sd(thesis$E4Angry, na.rm = T))
-
-# Joy-Hapiness
-
-E4Joy <-thesis%>%
-  dplyr::group_by(E4Treat)%>%
-  dplyr::summarise(media = mean(thesis$E4Joy, na.rm = T), DE = sd(thesis$E4Joy, na.rm = T))
-
-# sadness
-
-E4Sad <-thesis%>%
-  dplyr::group_by(E4Treat)%>%
-  dplyr::summarise(media = mean(thesis$E4Sad, na.rm = T), DE = sd(thesis$E4Sad, na.rm = T))
-
-# Fear
-
-E4Fear<-thesis%>%
-  group_by(E4Treat)%>%
-  summarise(media = mean(thesis$E4Fear, na.rm = T))
-
 ## Create new data frame
 
-finalDF <-dplyr::select(thesis, Age:Educ,SC0:E4Joy)
+finalDF <-dplyr::select(thesis, Age:Educ,SC0:E4Sad)
 
 
-finalDF <-saveRDS(finalDF, file = "Data/Analysis-Data/DF-final.RDS")
+saveRDS(finalDF, file = "Data/Analysis-Data/DF-final.RDS")
 
-
-thesis%>%
-  dplyr::group_by(E1Treat, DigitIndex)%>%
-  dplyr::summarise(mean1 = mean(E1, na.rm = T), SD = sd(thesis$E1, na.rm = T))
-
-
-thesis%>%
-  group_by(E2Treat, HomoIndex)%>%
-  summarise(mean2 = mean(SC0, na.rm = T), SD = sd(thesis$E1, na.rm = T))
-
-## TAREAS POR REALIZAR ##
-
-# Corregir el ifelse del E4Treat que no está funcionando
-# Corregir los group_by + summarize que no están funcionando.
-# Integrar las tablas ya listas al Rmarkdown para el informe.
-
-# Posible solucion: copiar y pegar los códigos que sí están funcionando en cada caso.
-
-TablaExperi <-list(E1, E2, E3, E4)
-
-TablaEmo <-list(E3Angry, E3Joy, E3Sad, E3Fear, E4Angry, E4Joy, E4Sad, E4Fear)
-
-#Save tables
-
-saveRDS(TablaExperi, file = "Results/Tables/Tabla-resultados-experimentos.rds")
-saveRDS(TablaEmo, file = "Results/Tables/Tabla-emociones.rds")
 
