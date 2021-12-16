@@ -6,22 +6,6 @@
 ### influencia de la homofília en la construcción de conductas políticas en el Chile Contemporáneo. ####
 ########################################################################################################
 
-ipak <- function(pkg){
-  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
-  if (length(new.pkg)) 
-    install.packages(new.pkg, dependencies = TRUE)
-  sapply(pkg, require, character.only = TRUE)
-}
-
-# usage
-packages <- c("tidyverse","dplyr","haven","ggplot2","readxl","summarytools", "patchwork","stringr",
-              "tidyr","kableExtra","psych", "MASS", "foreign", "data,table","gtools","lubridate","AER",
-              "xtable","pBrackets","Hmisc","ri","ggpubr", "stargazer")
-ipak(packages)
-
-#crosstab funtion
-source("http://pcwww.liv.ac.uk/~william/R/crosstab.r")
-
 
 # load DF
 
@@ -178,17 +162,25 @@ E2Digit<-df%>%
 
 E3 <-ctable(df$E3, df$E3Treat, prop = "c",useNA = "no")
 
+# Regresion model
+
 df$E3 <-as.factor(df$E3)
-model1 <-glm(E3 ~ E3Treat + HomoIndex + DigitCit, data = df, family = "binomial")
+E3M1 <-glm(E3 ~ E3Treat, data = df, family = "binomial")
+E3M2 <-glm(E3 ~ E3Treat + HomoIndex, data = df, family = "binomial")
+E3M3 <-glm(E3 ~ E3Treat + HomoIndex + DigitIndex, data = df, family = "binomial")
+
 summary(model1)
 
-stargazer(model1, out="Results/Tables/E3regression", type="latex",
-          covariate.labels = c("jdk","hola", "quetal","Baja Homofilia", "Alta Homofilia",
-                               "Baja Ciudadania Digital", "Alta Ciudadania Digital"), 
-          dep.var.labels = c("T.1", "T.2", "T.3", "T.4"), # keep.stat=c("n", "ll"),
-          dep.var.caption = "", star.cutoffs = c(0.05, 0.01, 0.001), notes.align = "l",
-          label="tbl:E3Regre",
-          title = "Mantención o ruptura de lazos", no.space=TRUE)
+stargazer(E3M1, E3M2, E3M3,
+          title = "Probabilidad de romper lazos sociales por facebook",
+          dep.var.caption = "Probabilidad de ruptura",
+          dep.var.labels = c("Modelo 1", "Modelo 2", "Modelo 3"),
+          star.cutoffs = c(0.05, 0.01, 0.001),
+          covariate.labels = c("Amigo - Tema político", "Familiar - Tema no político", "Familiar - Tema político",
+                               "Homofilia baja", "Homofilia Alta", "Ciud. Digital Baja", "Ciud. Digital Alta"),
+          notes.label = "Niveles de significancia",
+          type = "html",
+          out = "Results/Tables/E3regresion.html")
 
 #Emotions #
 
@@ -267,6 +259,23 @@ E3FearDigit <-df%>%
 # get a talk or avoid conversation
 
 E4 <-ctable(df$E4, df$E4Treat, prop = "c", chisq = T, useNA = "no")
+
+### Discuss or avoid ###
+
+E4M1 <-glm(E4 ~ E4Treat, data = df, family = "binomial")
+E4M2 <-glm(E4 ~ E4Treat + HomoIndex, data = df, family = "binomial")
+E4M3 <-glm(E4 ~ E4Treat + HomoIndex + DigitIndex, data = df, family = "binomial")
+
+
+stargazer(E4M1, E4M2, E4M3,
+          title = "Probabilidad de discutir con lazos sociales cercanos por opiniones opuestas a la propia",
+          dep.var.caption = "Probabilidad de ir a dar caldo",
+          covariate.labels = c("Amigo - Tema político", "Familiar - Tema no político", "Familiar - Tema político",
+                               "Homofilia baja", "Homofilia Alta", "Ciud. Digital Baja", "Ciud. Digital Alta"),
+          notes.label = "Niveles de significancia",
+          type = "html",
+          out = "Results/Tables/wea1.html")
+
 
 # Emotions exp. 4
 
@@ -349,10 +358,9 @@ E4FearDigit <-df%>%
 finalDF <-saveRDS(finalDF, file = "Data/Analysis-Data/DF-final.RDS")
 
 
-## TAREAS POR REALIZAR ##
+## Save all tables to use ##
 
-# Corregir el ifelse del E4Treat que no está funcionando
-# Integrar las tablas ya listas al Rmarkdown para el informe.
+
 
 anexo <-list(AE1Age, AE1Gen, AE1Inc, AE1Pol, AE2Age, AE2Gen, AE2Inc, AE2Pol, AE3Age, AE2Gen, AE3Inc, AE3Pol,
              AE4Age, AE4Gen, AE4Inc, AE4Pol)

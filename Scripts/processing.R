@@ -17,7 +17,8 @@ ipak <- function(pkg){
 
 # usage
 packages <- c("tidyverse","dplyr","haven","ggplot2","readxl","summarytools", "patchwork","stringr",
-              "tidyr","kableExtra","psych", "MASS", "foreign","wesanderson","ggpubr", "Rmisc")
+              "tidyr","kableExtra","psych", "MASS", "foreign", "data,table","gtools","lubridate","AER",
+              "xtable","pBrackets","Hmisc","ri","ggpubr", "stargazer", "Rmisc","wesanderson")
 ipak(packages)
 
 #crosstab funtion
@@ -29,6 +30,7 @@ source("http://pcwww.liv.ac.uk/~william/R/crosstab.r")
 thesis <-read.csv("Data/InputData/test3.csv")
 
 # select just the valid surveys
+
 
 thesis <-thesis%>%
   slice(-c(1,2))
@@ -54,13 +56,13 @@ thesis<- thesis%>%
 
 thesis$count <-rowSums(thesis[6:12], na.rm = T)
 
-thesis$HomoIndex <-ifelse(thesis$count<=39,0,1)
+thesis$HomoIndex <-ifelse(thesis$count<=37,0,1)
 
 
 #Digital CitizenShip
 
 thesis$DigiCount <-rowSums(thesis[13:26], na.rm = T)
-thesis$DigitIndex <-ifelse(thesis$DigiCount<=56,0,1)
+thesis$DigitIndex <-ifelse(thesis$DigiCount<=62,0,1)
 
 table(thesis$HomoIndex)
 table(thesis$DigitIndex)

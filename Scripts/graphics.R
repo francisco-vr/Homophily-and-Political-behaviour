@@ -19,19 +19,19 @@ E1general <-df%>%
   labs(title = "Experimento N°1: Nivel de ira por cercanía social, \n según tipo de tratamiento",
        x = "Tratamiento", y = "Nivel de ira",
        caption = "Fuente: Elaboración propia") +
-  stat_summary(fun.y=mean, geom="point") +
-  stat_summary(aes(label= round(..y.., 2)), fun.y=mean, geom="text", size=7, vjust = -4) +
+  stat_summary(fun=mean, geom="point") +
+  stat_summary(aes(label= round(..y.., 2)), fun=mean, geom="text", size=7, vjust = -4) +
   theme(plot.title = element_text(hjust = .5, size = 16, face = "bold"),
         plot.caption = element_text(face = "italic"))
 
 E1homo <-ggplot(data = df, mapping = aes(x = E1Treat, y = E1, fill = E1Treat)) +
   geom_boxplot(aes(colour = )) +
   scale_fill_manual(values = wes_palette(n=3, name="Darjeeling1"))+
-  stat_summary(fun.y=mean, geom="point") +
-  stat_summary(aes(label= round(..y.., 2)), fun.y=mean, geom="text", size=4, vjust = -2) +
+  stat_summary(fun=mean, geom="point") +
+  stat_summary(aes(label= round(..y.., 2)), fun=mean, geom="text", size=4, vjust = -2) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
   labs(title = "Niveles de Ira segun nivel de Homofilia polìtica",
-       y = "Nivel de Ira", x = "",
+       y = "Nivel de Ira", x = "Tratamientos",
        caption = "Fuente: Elaboración propia") + 
   facet_wrap(~HomoIndex, nrow = 1, labeller = labeller(HomoIndex = c('0'="Baja Homofilia",
                                                        '1'="Alta Homofilia")))
@@ -41,10 +41,10 @@ E1digit <-ggplot(data = df, mapping = aes(x = E1Treat, y = E1, fill = E1Treat)) 
   geom_boxplot() +
   scale_fill_manual(values = wes_palette(n=3, name="Darjeeling1"))+
   geom_jitter(color="black", size=0.4, alpha=0.9)+
-  stat_summary(fun.y=mean, geom="point") +
-  stat_summary(aes(label= round(..y.., 2)), fun.y=mean, geom="text", size=4, vjust = -2) +
+  stat_summary(fun=mean, geom="point") +
+  stat_summary(aes(label= round(..y.., 2)), fun=mean, geom="text", size=4, vjust = -2) +
   labs(title = "Niveles de Ira segun nivel de Ciudadanìa Digital",
-       y = "Nivel de Ira", x = "",
+       y = "Nivel de Ira", x = "Tratamientos",
        caption = "Fuente: Elaboración propia") +
   facet_wrap(~DigitIndex, nrow = 1, labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
                                                                        '1'="Alta Ciudadanía Digital")))
@@ -67,8 +67,8 @@ E2general<-df%>%
   geom_boxplot() +
   scale_fill_manual(values = wes_palette(n=3, name="Darjeeling1")) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
-  stat_summary(fun.y=mean, geom="point") +
-  stat_summary(aes(label= round(..y.., 2)), fun.y=mean, geom="text", size=7, vjust = -2) +
+  stat_summary(fun=mean, geom="point") +
+  stat_summary(aes(label= round(..y.., 2)), fun=mean, geom="text", size=7, vjust = -2) +
   labs(title = "Experimento N°2: Puntajes de  de acertividad ante \n titulares de noticias falsos o verdaderos",
        x = "Tratamiento", y = "Puntaje (max 7)",
        caption = "Fuente: Elaboración propia") +
@@ -78,10 +78,10 @@ E2general<-df%>%
 E2homo <-ggplot(data = df, mapping = aes(x = E2Treat, y = SC0, fill = E2Treat)) +
   stat_boxplot(geom ='errorbar', width = 0.6) +
   geom_boxplot() +
-  stat_summary(fun.y=mean, geom="point") +
-  stat_summary(aes(label= round(..y.., 2)), fun.y=mean, geom="text", size=4, vjust = -2) +
+  stat_summary(fun=mean, geom="point") +
+  stat_summary(aes(label= round(..y.., 2)), fun=mean, geom="text", size=4, vjust = -2) +
   scale_fill_manual(values = wes_palette("Darjeeling1")) +
-  labs(title = "Según nivel de Homofilia",
+  labs(title = "Según nivel de Homofilia política",
        x = "Tratamiento", y = "Puntaje (max 7)",
        caption = "Fuente: Elaboración propia") +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
@@ -91,8 +91,8 @@ E2homo <-ggplot(data = df, mapping = aes(x = E2Treat, y = SC0, fill = E2Treat)) 
 E2digit <-ggplot(data = df, mapping = aes(x = E2Treat, y = SC0, fill = E2Treat)) +
   stat_boxplot(geom ='errorbar', width = 0.6) +
   geom_boxplot() +
-  stat_summary(fun.y=mean, geom="point") +
-  stat_summary(aes(label= round(..y.., 2)), fun.y=mean, geom="text", size=4, vjust = -2) +
+  stat_summary(fun=mean, geom="point") +
+  stat_summary(aes(label= round(..y.., 2)), fun=mean, geom="text", size=4, vjust = -2) +
   scale_fill_manual(values = wes_palette(n=3, name="Darjeeling1")) +
   labs(title = "Según nivel de Ciudadania Digital",
        x = "Tratamiento", y = "Puntaje (max 7)",
@@ -113,7 +113,16 @@ ggsave(PlotE2, filename = "Results/Plots/Experimento2.png",
 
 ### Maintain/Broke ties ###
 
-
+ggplot(data = df, aes(x = factor(E3), y = E3Angry, color = factor(E3))) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(width = 0.1) +
+  theme_bw() +
+  theme(legend.position = "null") +
+  labs(title = "Experimento N°3: Probabilidad de romper lazos sociales en Facebook, \n según los niveles de Ira que representa la situación",
+       x = "Probabilidad de romper lazos", y = "Nivel de ira",
+       caption = "Fuente: Elaboración propia") +
+  theme(plot.title = element_text(hjust = .5, size = 18, face = "bold"),
+        plot.caption = element_text(face = "italic"))
 
 
 ### Emotions ###
@@ -140,6 +149,9 @@ Plot3Angry <-df%>%
 E3AngryHomo <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Angry, fill = E3Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de Ira segun Homofilia polìtica",
+       y = "Nivel de Ira", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~HomoIndex, nrow = 1, labeller = labeller(HomoIndex = c('0'="Baja Homofilia",
                                                                      '1'="Alta Homofilia")))
 
@@ -148,6 +160,9 @@ E3AngryHomo <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Angry, fill = E
 E3AngryDigit <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Angry, fill = E3Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de Ira segun ciudadanía digital",
+       y = "Nivel de Ira", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~DigitIndex, nrow = 1,labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
                                                                       '1'="Alta Ciudadanía Digital")))
 
@@ -174,11 +189,14 @@ Plot3Joy <-df%>%
 
 ## By Homophily and Digital citizen ##
 
-# Homphily
+# Homophily
 
 E3JoyHomo <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Joy, fill = E3Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de felicidad segun Homofilia polìtica",
+       y = "Nivel de Felicidad", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~HomoIndex, nrow = 1, labeller = labeller(HomoIndex = c('0'="Baja Homofilia",
                                                                      '1'="Alta Homofilia")))
 
@@ -187,6 +205,9 @@ E3JoyHomo <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Joy, fill = E3Tre
 E3JoyDigit <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Joy, fill = E3Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de felicidad según Ciudadanía Digital",
+       y = "Nivel de Felicidad", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~DigitIndex, nrow = 1,labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
                                                                       '1'="Alta Ciudadanía Digital")))
 
@@ -219,6 +240,9 @@ Plot3Sad <-df%>%
 E3SadHomo <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Sad, fill = E3Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de tristeza según Homofilia Política",
+       y = "Nivel de Tristeza", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~HomoIndex, nrow = 1, labeller = labeller(HomoIndex = c('0'="Baja Homofilia",
                                                                      '1'="Alta Homofilia")))
 
@@ -227,6 +251,9 @@ E3SadHomo <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Sad, fill = E3Tre
 E3SadDigit <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Sad, fill = E3Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de tristeza según Ciudadanía digital",
+       y = "Nivel de Ira", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~DigitIndex, nrow = 1,labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
                                                                       '1'="Alta Ciudadanía Digital")))
 
@@ -258,6 +285,9 @@ Plot3Fear <-df%>%
 E3FearHomo <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Fear, fill = E3Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de temor segun Homofilia polìtica",
+       y = "Nivel de Temor", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~HomoIndex, nrow = 1, labeller = labeller(HomoIndex = c('0'="Baja Homofilia",
                                                                      '1'="Alta Homofilia")))
 
@@ -266,6 +296,9 @@ E3FearHomo <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Fear, fill = E3T
 E3FearDigit <-ggplot(data = df, mapping = aes(x = E3Treat, y = E3Fear, fill = E3Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de temor segun Ciudadanía Digital",
+       y = "Nivel de Temor", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~DigitIndex, nrow = 1,labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
                                                                       '1'="Alta Ciudadanía Digital")))
 
@@ -275,7 +308,7 @@ ggsave(PlotE3Fear, filename = "Results/Plots/Exp3fear.png",
        dpi = 600, width = 22, height = 9)
 
 
-## Ploting four emnotions
+## Ploting four emotions
 
 PlotE3Emotions <-(Plot3Joy / Plot3Angry | Plot3Fear / Plot3Sad)
 
@@ -289,8 +322,19 @@ ggsave(PlotE3Emotions, filename = "Results/Plots/E3Emotions.png",
 
 ### Discuss or avoid ###
 
+E4M1 <-glm(E4 ~ E4Treat, data = df, family = "binomial")
+E4M2 <-glm(E4 ~ E4Treat + HomoIndex, data = df, family = "binomial")
+E4M3 <-glm(E4 ~ E4Treat + HomoIndex + DigitIndex, data = df, family = "binomial")
 
 
+stargazer(E4M1, E4M2, E4M3,
+          title = "Probabilidad de discutir con lazos sociales cercanos por opiniones opuestas a la propia",
+          dep.var.caption = "Probabilidad de ir a dar caldo",
+          covariate.labels = c("Amigo - Tema político", "Familiar - Tema no político", "Familiar - Tema político",
+                               "Homofilia baja", "Homofilia Alta", "Ciud. Digital Baja", "Ciud. Digital Alta"),
+          notes.label = "Niveles de significancia",
+          type = "html",
+          out = "Results/Tables/wea1.html")
 
 ### Emotions throughy that
 
@@ -316,6 +360,9 @@ Plot4Angry <-df%>%
 E4AngryHomo <-ggplot(data = df, mapping = aes(x = E4Treat, y = E4Angry, fill = E4Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de Ira segun Homofilia polìtica",
+       y = "Nivel de Ira", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~HomoIndex, nrow = 1, labeller = labeller(HomoIndex = c('0'="Baja Homofilia",
                                                                      '1'="Alta Homofilia")))
 
@@ -324,6 +371,9 @@ E4AngryHomo <-ggplot(data = df, mapping = aes(x = E4Treat, y = E4Angry, fill = E
 E4AngryDigit <-ggplot(data = df, mapping = aes(x = E4Treat, y = E4Angry, fill = E4Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de Ira segun Ciudadanía Digital",
+       y = "Nivel de Ira", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~DigitIndex, nrow = 1,labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
                                                                       '1'="Alta Ciudadanía Digital")))
 
@@ -354,6 +404,9 @@ Plot4Joy <-df%>%
   E4JoyHomo <-ggplot(data = df, mapping = aes(x = E4Treat, y = E4Joy, fill = E4Treat)) +
     geom_boxplot(aes(colour = )) +
     geom_jitter(color="black", size=0.4, alpha=0.9)+
+    labs(title = "Niveles de felicidad según Homofilia polìtica",
+         y = "Nivel de Felicidad", x = "Tratamientos",
+         caption = "Fuente: Elaboración propia") + 
     facet_wrap(~HomoIndex, nrow = 1, labeller = labeller(HomoIndex = c('0'="Baja Homofilia",
                                                                        '1'="Alta Homofilia")))
   
@@ -362,6 +415,9 @@ Plot4Joy <-df%>%
   E4JoyDigit <-ggplot(data = df, mapping = aes(x = E4Treat, y = E4Joy, fill = E4Treat)) +
     geom_boxplot(aes(colour = )) +
     geom_jitter(color="black", size=0.4, alpha=0.9)+
+    labs(title = "Niveles de felicidad segun Ciudadanía Digital",
+         y = "Nivel de Felicidad", x = "Tratamientos",
+         caption = "Fuente: Elaboración propia") + 
     facet_wrap(~DigitIndex, nrow = 1,labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
                                                                         '1'="Alta Ciudadanía Digital")))
   
@@ -394,6 +450,9 @@ Plot4Sad <-df%>%
 E4SadHomo <-ggplot(data = df, mapping = aes(x = E4Treat, y = E4Sad, fill = E4Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de tristeza segun Homofilia polìtica",
+       y = "Nivel de Tristeza", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~HomoIndex, nrow = 1, labeller = labeller(HomoIndex = c('0'="Baja Homofilia",
                                                                      '1'="Alta Homofilia")))
 
@@ -402,6 +461,9 @@ E4SadHomo <-ggplot(data = df, mapping = aes(x = E4Treat, y = E4Sad, fill = E4Tre
 E4SadDigit <-ggplot(data = df, mapping = aes(x = E4Treat, y = E4Sad, fill = E4Treat)) +
   geom_boxplot(aes(colour = )) +
   geom_jitter(color="black", size=0.4, alpha=0.9)+
+  labs(title = "Niveles de tristeza según Homofilia polìtica",
+       y = "Nivel de tristeza", x = "Tratamientos",
+       caption = "Fuente: Elaboración propia") + 
   facet_wrap(~DigitIndex, nrow = 1,labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
                                                                       '1'="Alta Ciudadanía Digital")))
 
@@ -432,6 +494,9 @@ ggsave(PlotE4Sad, filename = "Results/Plots/Exp4sad.png",
   E4FearHomo <-ggplot(data = df, mapping = aes(x = E4Treat, y = E4Fear, fill = E4Treat)) +
     geom_boxplot(aes(colour = )) +
     geom_jitter(color="black", size=0.4, alpha=0.9)+
+    labs(title = "Niveles de temor segun Homofilia polìtica",
+         y = "Nivel de temor", x = "Tratamientos",
+         caption = "Fuente: Elaboración propia") + 
     facet_wrap(~HomoIndex, nrow = 1, labeller = labeller(HomoIndex = c('0'="Baja Homofilia",
                                                                        '1'="Alta Homofilia")))
   
@@ -440,6 +505,9 @@ ggsave(PlotE4Sad, filename = "Results/Plots/Exp4sad.png",
   E4FearDigit <-ggplot(data = df, mapping = aes(x = E4Treat, y = E4Fear, fill = E4Treat)) +
     geom_boxplot(aes(colour = )) +
     geom_jitter(color="black", size=0.4, alpha=0.9)+
+    labs(title = "Niveles de temor segun Ciudadanía Digital",
+         y = "Nivel de temor", x = "Tratamientos",
+         caption = "Fuente: Elaboración propia") + 
     facet_wrap(~DigitIndex, nrow = 1,labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
                                                                         '1'="Alta Ciudadanía Digital")))
   
