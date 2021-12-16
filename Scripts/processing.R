@@ -56,7 +56,7 @@ thesis<- thesis%>%
 
 thesis$count <-rowSums(thesis[6:12], na.rm = T)
 
-thesis$HomoIndex <-ifelse(thesis$count<=37,0,1)
+thesis$HomoIndex <-ifelse(thesis$count<=39,0,1)
 
 
 #Digital CitizenShip
