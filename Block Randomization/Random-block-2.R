@@ -89,13 +89,13 @@ args<-as.numeric(args)
 
 DigitCount <-sum(args[9:22])
 
-DigiCit <-ifelse(DigitCount>=50,1,0)
+DigiCit <-ifelse(DigitCount>=63,1,0)
 
 # Homofilia política
 
 HomoCount <-sum(args[2:8])
 
-HomoIndex <-ifelse(HomoCount>=33,1,0)
+HomoIndex <-ifelse(HomoCount>=40,1,0)
 
 
 #División de bases y guardado
