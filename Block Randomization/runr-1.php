@@ -378,3 +378,4 @@ function logConsole($name, $data = NULL, $jsEval = FALSE)
       $data = $isevaled ? $data : ($data[0] === "'") ? $data : "'" . $data . "'";
     }
 ?>
+
