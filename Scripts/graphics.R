@@ -122,32 +122,12 @@ ggsave(PlotE2, filename = "Results/Plots/Experimento2.png",
        dpi = 400, width = 15, height = 9)
 
 
-
-ggplot(df, aes(x=SC0)) + 
-  geom_bar()+
-  scale_x_continuous() +
-  scale_fill_manual(values = wes_palette(n=3, name="Darjeeling1"))+
-  facet_wrap(~E2Treat)
-
-
 #####################
 #### Experiment 3 ###
 #####################
 
 
 ### Maintain/Broke ties ###
-
-tablaE3 <-table(df$E3, df$E3Treat)
-
-round((prop.table(tablaE3)*100),2)
-
-tablaE3Tie <-table(df$E3, df$E3TTie)
-round((prop.table(tablaE3Tie)*100),2)
-
-ggplot(data = df) +
-  geom_mosaic(aes(x = product(E3, E3Treat), fill=E3Treat)) + 
-  labs(title='Tratamientos Experimento N°3')
-
 
 
 
@@ -174,8 +154,8 @@ E3BAngry <-ggplot(data = df, aes(x = factor(E3), y = E3Angry, color = factor(E3)
   theme(plot.title = element_text(hjust = .5, size = 14),
         plot.caption = element_text(face = "italic")) +
   stat_compare_means(comparisons = compE3) +
-  stat_compare_means(method = "t.test", label.y = 108)
-
+  stat_compare_means(method = "wilcox.test", label.y = 108)+
+  
 
 E3BJoy <-ggplot(data = df, aes(x = factor(E3), y = E3Joy, color = factor(E3))) +
   geom_boxplot(outlier.shape = NA) +
@@ -191,7 +171,7 @@ E3BJoy <-ggplot(data = df, aes(x = factor(E3), y = E3Joy, color = factor(E3))) +
   theme(plot.title = element_text(hjust = .5, size = 14),
         plot.caption = element_text(face = "italic")) +
   stat_compare_means(comparisons = compE3) +
-  stat_compare_means(method = "t.test", label.y = 105)
+  stat_compare_means(method = "wilcox.test", label.y = 105)
 
 
 E3BSad <-ggplot(data = df, aes(x = factor(E3), y = E3Sad, color = factor(E3))) +
@@ -208,7 +188,7 @@ E3BSad <-ggplot(data = df, aes(x = factor(E3), y = E3Sad, color = factor(E3))) +
   theme(plot.title = element_text(hjust = .5, size = 14),
         plot.caption = element_text(face = "italic")) +
   stat_compare_means(comparisons = compE3) +
-  stat_compare_means(method = "t.test", label.y = 105)
+  stat_compare_means(method = "wilcox.test", label.y = 105)
 
 
 
@@ -226,7 +206,7 @@ E3BFear <-ggplot(data = df, aes(x = factor(E3), y = E3Fear, color = factor(E3)))
   theme(plot.title = element_text(hjust = .5, size = 14),
         plot.caption = element_text(face = "italic")) +
   stat_compare_means(comparisons = compE3) +
-  stat_compare_means(method = "t.test", label.y = 105)
+  stat_compare_means(method = "wilcox.test", label.y = 105)
 
 
 

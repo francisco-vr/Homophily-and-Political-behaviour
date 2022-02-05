@@ -22,8 +22,7 @@ packages <- c("tidyverse","dplyr","haven","ggplot2","readxl","summarytools", "pa
               "vcd", "plyr")
 ipak(packages)
 
-#crosstab funtion
-source("http://pcwww.liv.ac.uk/~william/R/crosstab.r")
+
 
 
 ## Load data ##

@@ -227,6 +227,24 @@ xtable(E2Digit)
 E3 <-ctable(df$E3, df$E3Treat, dnn = c('Probabilidad de romper lazos', 'Tratamiento'), prop = "c",useNA = "no",
             chisq = T, headings = TRUE, style = 'rmarkdown')
 
+##by echo chambers
+
+E3Homo ->ordered(df$E3, levels = c("Romper lazos", "Mantener Lazos"))%>%
+  stby(data = list(x= df$E3, y = df$E3Treat),
+       INDICES = df$HomoIndex,
+       FUN = ctable,
+       dnn = c('Probabilidad de romper lazos', 'Tratamiento'),
+       prop = "c",
+       chisq = TRUE)
+
+E3Digi <-ordered(df$E3, levels = c("Romper lazos", "Mantener Lazos"))%>%
+  stby(data = list(x= df$E3, y = df$E3Treat),
+       INDICES = df$DigitIndex,
+       FUN = ctable,
+       dnn = c('Probabilidad de romper lazos', 'Tratamiento'),
+       prop = "c",
+       chisq = TRUE)
+
 ## by type of social tie and type of argumentation
 
 E3Friend <-ctable(df$E3, df$E3TTie, dnn = c('Probabilidad de romper lazos', 'Tratamiento'), useNA = "no", chisq = T,
@@ -264,7 +282,7 @@ E3FrDigi <-ordered(df$E3, levels = c("Mantener Lazos", "Romper lazos"))%>%
 
 ## subdivided by argumentation
 
-E3ArgHomo <--ordered(df$E3, levels = c("Romper lazos", "Mantener Lazos"))%>%
+E3ArgHomo <-ordered(df$E3, levels = c("Romper lazos", "Mantener Lazos"))%>%
   stby(data=list(x = df$E3, y = df$E3TArg),
        INDICES = df$HomoIndex,
        FUN = ctable,
