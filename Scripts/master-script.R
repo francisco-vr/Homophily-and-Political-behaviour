@@ -21,9 +21,6 @@ packages <- c("tidyverse","dplyr","haven","ggplot2","readxl","summarytools", "pa
               "data,table","gtools","lubridate","AER","xtable","pBrackets","Hmisc","ri","ggpubr")
 ipak(packages)
 
-#crosstab funtion
-source("http://pcwww.liv.ac.uk/~william/R/crosstab.r")
-
 
 # Part 1: processing data frame 
 
@@ -31,7 +28,7 @@ source("Scripts/processing.R")
 
 # Part 2: Creating Tables and other outcomes
 
-source("Scripts/processing.R")
+source("Scripts/analysis.R")
 
 
 # Part 3: Creating Graphics
