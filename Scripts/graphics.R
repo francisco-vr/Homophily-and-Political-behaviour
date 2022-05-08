@@ -25,18 +25,28 @@ E1general <-df%>%
   labs(title = "Experimento N°1: Nivel de ira por cercanía social, \n según tipo de tratamiento",
        x = "Tratamiento", y = "Nivel de ira (Max 7)",
        caption = "Fuente: Elaboración propia") +
+  geom_text(data = data.frame(x = 1.99323459079714, y = 7.06367300320391, 
+                              label = "Wilcoxon test"), mapping = aes(x = x, y = y, label = label), 
+            size = 4.23, vjust = 0L, inherit.aes = FALSE)+
   stat_summary(fun=mean, geom="point") +
   stat_summary(aes(label= round(..y.., 2)), fun=mean, geom="text", size=5, vjust = -1.5) +
   theme(plot.title = element_text(hjust = .5, size = 16, face = "bold"),
         plot.caption = element_text(face = "italic")) +
-    stat_compare_means(comparisons = compE1) +
+  stat_compare_means(comparisons = compE1) +
   stat_compare_means(label.y = 9)
 
+
 E1homo <-ggplot(data = df, mapping = aes(x = E1Treat, y = E1, fill = E1Treat)) +
-  geom_boxplot(aes(colour = )) +
+  geom_boxplot() +
   scale_fill_manual(values = wes_palette(n=3, name="Darjeeling1"))+
   stat_summary(fun=mean, geom="point") +
   stat_summary(aes(label= round(..y.., 2)), fun=mean, geom="text", size=4, vjust = -2) +
+  geom_text(data = data.frame(x = 1.97856251472404, y = 6.99398493549631, 
+                              label = "WIlcoxon Test", HomoIndex = 0L),
+            mapping = aes(x = x,y = y, label = label), size = 3.17, inherit.aes = FALSE) +
+geom_text(data = data.frame(x = 1.98265356948427, y = 6.96350427825525, 
+                            label = "WIlcoxon Test", HomoIndex = 1L),
+          mapping = aes(x = x,y = y, label = label), size = 3.17, inherit.aes = FALSE) +
   labs(title = "Niveles de Ira según membresía a Cámaras de Eco",
        y = "Nivel de ira (Max 7)", x = "Tratamientos",
        caption = "Fuente: Elaboración propia") + 
@@ -44,7 +54,7 @@ E1homo <-ggplot(data = df, mapping = aes(x = E1Treat, y = E1, fill = E1Treat)) +
                                                        '1'="Alta membresia a Cámaras de eco"))) +
   stat_compare_means(comparisons = compE1) +
   stat_compare_means(label.y = 9.2)
-  
+
 
 E1digit <-ggplot(data = df, mapping = aes(x = E1Treat, y = E1, fill = E1Treat)) +
   geom_boxplot() +
@@ -52,13 +62,19 @@ E1digit <-ggplot(data = df, mapping = aes(x = E1Treat, y = E1, fill = E1Treat)) 
   stat_summary(fun=mean, geom="point") +
   stat_summary(aes(label= round(..y.., 2)), fun=mean, geom="text", size=3.5, vjust = -2) +
   stat_compare_means(comparisons = compE1) +
+  geom_text(data = data.frame(x = 1.98815731442137, y = 7.00733768984006, 
+                            label = "Wilcoxon test", DigitIndex = 1L),
+            mapping = aes(x = x,y = y, label = label), size = 3.17, inherit.aes = FALSE) +
+  geom_text(data = data.frame(x = 1.98226559070716, y = 7.00733768984006, 
+                            label = "Wilcoxon test", DigitIndex = 0L),
+            mapping = aes(x = x, y = y, label = label), size = 3.17, inherit.aes = FALSE) +
   stat_compare_means(label.y = 9.2) +
   labs(title = "Niveles de Ira segun nivel de Ciudadanìa Digital",
        y = "Nivel de ira (Max 7)", x = "Tratamientos",
        caption = "Fuente: Elaboración propia") +
   facet_wrap(~DigitIndex, nrow = 1, labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
                                                                        '1'="Alta Ciudadanía Digital")))
-
+                                                                       
 PlotE1 <-(E1general | E1homo / E1digit)
 
 ggsave(PlotE1, filename = "Results/Plots/Experimento1.png",
@@ -127,11 +143,200 @@ ggsave(PlotE2, filename = "Results/Plots/Experimento2.png",
 #####################
 
 
-### Maintain/Broke ties ###
+### Maintain/Broke ties general ###
+
+plotdata <- df %>%
+  dplyr::group_by(E3Treat, E3) %>%
+  dplyr::summarise(n = n()) %>% 
+  dplyr::mutate(pct = n/sum(n),
+                lbl = scales::percent(pct))
+plotdata
+
+ordered(df$E3Treat, levels = c("Amigo-Validado", "Amigo-Misinfo","Conocido-Misinfo","Conocido-validado"))
+
+PlotE3 <-ggplot(plotdata, 
+       aes(x = E3Treat,
+           y = pct,
+           fill = as.character(E3))) + 
+  geom_bar(stat = "identity",
+           position = "fill") +
+  scale_y_continuous(breaks = seq(0, 1, .2), 
+                     label = percent) +
+  scale_fill_discrete(labels = c("Mantenerse como amigo","Dejar de seguir en RRSS"))+
+  scale_x_discrete(labels = c("Lazo Fuerte - Desinformación","Lazo Fuerte - Arg. validado",
+  "Lazo débil - Desinformación","Lazo Débil - Arg. Validado"))+
+  geom_text(aes(label = lbl), 
+            size = 3, 
+            position = position_stack(vjust = 0.5)) +
+  labs(y = "Porcentaje",
+       fill = "Comportamiento",
+       x = "Tratamientos",
+       caption = "Fuente:Elaboración Propia") +
+  theme_minimal()+
+  coord_flip()
+
+PlotE3 <-PlotE3 + plot_annotation(title = 'Experimento N°2: Probabilidad de romper lazos sociales en RRSS',
+                                        theme = theme(plot.title = element_text(size = 18,face = 'bold')))
+
+ggsave(PlotE3, filename = "Results/Plots/Experimento3.png",
+       dpi = 400, width = 15, height = 9)
+
+ #By echo chamber membership - high #
 
 
+plotdataEco1 <- df %>%
+  filter(HomoIndex=="1")%>%
+  dplyr::group_by(E3Treat, E3) %>%
+  dplyr::summarise(n = n()) %>% 
+  dplyr::mutate(pct = n/sum(n),
+                lbl = scales::percent(pct))
+plotdataEco1
 
-# Representación gráfica del modelo.
+ordered(df$E3Treat, levels = c("Amigo-Validado", "Amigo-Misinfo","Conocido-Misinfo","Conocido-validado"))
+
+PlotE3Eco1 <-ggplot(plotdataEco1, 
+                aes(x = E3Treat,
+                    y = pct,
+                    fill = as.character(E3))) + 
+  geom_bar(stat = "identity",
+           position = "fill") +
+  scale_y_continuous(breaks = seq(0, 1, .2), 
+                     label = percent) +
+  scale_fill_discrete(labels = c("Mantenerse como amigo","Dejar de seguir en RRSS"))+
+  scale_x_discrete(labels = c("Lazo Fuerte - Desinformación","Lazo Fuerte - Arg. validado",
+                              "Lazo débil - Desinformación","Lazo Débil - Arg. Validado"))+
+  geom_text(aes(label = lbl), 
+            size = 3, 
+            position = position_stack(vjust = 0.5)) +
+  ggtitle("Alta membresía a Cámaras de eco")+
+  theme(plot.title = element_text(size = 90, face = "bold"))+
+  labs(y = "Porcentaje",
+       fill = "Comportamiento",
+       x = "Tratamientos",
+       caption = "Fuente:Elaboración Propia") +
+  theme_minimal()+
+  coord_flip()
+
+
+# Mantain or borke ties by echo chamber membership - Low #
+
+plotdataEco2 <- df %>%
+  filter(HomoIndex=="0")%>%
+  dplyr::group_by(E3Treat, E3) %>%
+  dplyr::summarise(n = n()) %>% 
+  dplyr::mutate(pct = n/sum(n),
+                lbl = scales::percent(pct))
+plotdataEco2
+
+ordered(df$E3Treat, levels = c("Amigo-Validado", "Amigo-Misinfo","Conocido-Misinfo","Conocido-validado"))
+
+PlotE3Eco2 <-ggplot(plotdataEco2, 
+                aes(x = E3Treat,
+                    y = pct,
+                    fill = as.character(E3))) + 
+  geom_bar(stat = "identity",
+           position = "fill") +
+  scale_y_continuous(breaks = seq(0, 1, .2), 
+                     label = percent) +
+  scale_fill_discrete(labels = c("Mantenerse como amigo","Dejar de seguir en RRSS"))+
+  scale_x_discrete(labels = c("Lazo Fuerte - Desinformación","Lazo Fuerte - Arg. validado",
+                              "Lazo débil - Desinformación","Lazo Débil - Arg. Validado"))+
+  geom_text(aes(label = lbl), 
+            size = 3, 
+            position = position_stack(vjust = 0.5)) +
+  ggtitle("Baja membresía a Cámaras de eco")+
+  theme(plot.title = element_text(size = 90, face = "bold"))+
+  labs(y = "Porcentaje",
+       fill = "Comportamiento",
+       x = "Tratamientos",
+       caption = "Fuente:Elaboración Propia") +
+  theme_minimal()+
+  coord_flip()
+
+PlotE3Eco <-(PlotE3Eco1 / PlotE3Eco2)
+PlotE3Eco <-PlotE3Eco + plot_annotation(title = 'Experimento N°2: Probabilidad de romper lazos sociales en RRSS, subdividido por membresía a cámaras de eco',
+                                    theme = theme(plot.title = element_text(size = 18,face = 'bold')))
+
+ggsave(PlotE3Eco, filename = "Results/Plots/Experimento3Eco.png",
+       dpi = 400, width = 15, height = 12)
+
+
+# maintain or broke ties, by digital citizenship - HIGH #
+
+plotdataDigi1 <- df %>%
+  filter(DigitIndex=="1")%>%
+  dplyr::group_by(E3Treat, E3) %>%
+  dplyr::summarise(n = n()) %>% 
+  dplyr::mutate(pct = n/sum(n),
+                lbl = scales::percent(pct))
+plotdataDigi1
+
+ordered(df$E3Treat, levels = c("Amigo-Validado", "Amigo-Misinfo","Conocido-Misinfo","Conocido-validado"))
+
+PlotE3Digi1 <-ggplot(plotdataDigi1, 
+                    aes(x = E3Treat,
+                        y = pct,
+                        fill = as.character(E3))) + 
+  geom_bar(stat = "identity",
+           position = "fill") +
+  scale_y_continuous(breaks = seq(0, 1, .2), 
+                     label = percent) +
+  scale_fill_discrete(labels = c("Mantenerse como amigo","Dejar de seguir en RRSS"))+
+  scale_x_discrete(labels = c("Lazo Fuerte - Desinformación","Lazo Fuerte - Arg. validado",
+                              "Lazo débil - Desinformación","Lazo Débil - Arg. Validado"))+
+  geom_text(aes(label = lbl), 
+            size = 3, 
+            position = position_stack(vjust = 0.5)) +
+  ggtitle("Alto nivel de ciudadanía digital")+
+  theme(plot.title = element_text(size = 90, face = "bold"))+
+  labs(y = "Porcentaje",
+       fill = "Comportamiento",
+       x = "Tratamientos",
+       caption = "Fuente:Elaboración Propia") +
+  theme_minimal()+
+  coord_flip()
+
+## Maintain or broke ties by digital citizenship - low #
+
+plotdataDigi2 <- df %>%
+  filter(DigitIndex=="0")%>%
+  dplyr::group_by(E3Treat, E3) %>%
+  dplyr::summarise(n = n()) %>% 
+  dplyr::mutate(pct = n/sum(n),
+                lbl = scales::percent(pct))
+plotdataDigi2
+
+ordered(df$E3Treat, levels = c("Amigo-Validado", "Amigo-Misinfo","Conocido-Misinfo","Conocido-validado"))
+
+PlotE3Digi2 <-ggplot(plotdataDigi2, 
+                     aes(x = E3Treat,
+                         y = pct,
+                         fill = as.character(E3))) + 
+  geom_bar(stat = "identity",
+           position = "fill") +
+  scale_y_continuous(breaks = seq(0, 1, .2), 
+                     label = percent) +
+  scale_fill_discrete(labels = c("Mantenerse como amigo","Dejar de seguir en RRSS"))+
+  scale_x_discrete(labels = c("Lazo Fuerte - Desinformación","Lazo Fuerte - Arg. validado",
+                              "Lazo débil - Desinformación","Lazo Débil - Arg. Validado"))+
+  geom_text(aes(label = lbl), 
+            size = 3, 
+            position = position_stack(vjust = 0.5)) +
+  ggtitle("Bajo nivel de ciudadanía digital")+
+  theme(plot.title = element_text(size = 90, face = "bold"))+
+  labs(y = "Porcentaje",
+       fill = "Comportamiento",
+       x = "Tratamientos",
+       caption = "Fuente:Elaboración Propia") +
+  theme_minimal()+
+  coord_flip()
+
+PlotE3EDigi <-(PlotE3Digi1 / PlotE3Digi2)
+PlotE3EDigi <-PlotE3EDigi + plot_annotation(title = 'Experimento N°2: Probabilidad de romper lazos sociales en RRSS, subdividido por Ciudadanía Digital',
+                                        theme = theme(plot.title = element_text(size = 18,face = 'bold')))
+
+ggsave(PlotE3EDigi, filename = "Results/Plots/Experimento3Digi.png",
+       dpi = 400, width = 15, height = 12)
 
 
 
@@ -633,6 +838,61 @@ CompE4 <-list(c("Amigo-No-Politico", "Amigo-Politico"), c("Familia-No-Politico",
               c("Amigo-No-Politico", "Familia-No-Politico"), c("Amigo-Politico", "Familia-Politico"))
 
 ### Discuss or avoid ###
+
+## General ##
+
+plotdata <- df %>%
+  dplyr::group_by(E3Treat, E3) %>%
+  dplyr::summarise(n = n()) %>% 
+  dplyr::mutate(pct = n/sum(n),
+                lbl = scales::percent(pct))
+plotdata
+
+
+ggplot(plotdata, 
+       aes(x = E3Treat,
+           y = pct,
+           fill = as.character(E3))) + 
+  geom_bar(stat = "identity",
+           position = "fill") +
+  scale_y_continuous(breaks = seq(0, 1, .2), 
+                     label = percent) +
+  scale_fill_discrete(labels = c("seguir como amigo", "dejar de seguir"))
+  geom_text(aes(label = lbl), 
+            size = 3, 
+            position = position_stack(vjust = 0.5)) +
+  labs(y = "Porcentaje",
+       fill = "Comportamiento",
+       x = "Tratamientos",
+       title = "Experimento N°2: Tendencia a ruptura de lazos sociales, segun tipo de lazo y argumentación ") +
+  theme_minimal() +
+    coord_flip()
+
+## by digital citizenship ##
+
+ggplot(plotdata, 
+       aes(x = E3Treat,
+           y = pct,
+           fill = as.character(E3))) + 
+  geom_bar(stat = "identity",
+           position = "fill") +
+  scale_y_continuous(breaks = seq(0, 1, .2), 
+                     label = percent) +
+  geom_text(aes(label = lbl), 
+            size = 3, 
+            position = position_stack(vjust = 0.5)) +
+  labs(y = "Porcentaje",
+       fill = "Comportamiento",
+       x = "Tratamientos",
+       title = "Experimento N°2: Tendencia hacia la discusión abierta por temas políticos y no-políticos, \n según tipo de lazo social") +
+  theme_minimal() +
+facet_wrap(~DigitIndex, nrow = 1, labeller = labeller(DigitIndex = c('0'="Baja Ciudanía Digital",
+                                                                     '1'="Alta Ciudadanía Digital")))
+
+
+
+
+## Emotions ##
 
 E4DAngry <-ggplot(data = df, aes(x = factor(E4), y = E4Angry, color = factor(E4))) +
   geom_boxplot(outlier.shape = NA) +
