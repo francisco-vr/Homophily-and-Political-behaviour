@@ -24,10 +24,6 @@ packages <- c("tidyverse","dplyr","haven","ggplot2","readxl","summarytools", "pa
 ipak(packages)
 
 
-
-
-
-
 ## Load data ##
 
 thesis <-read.csv("Data/InputData/test5.csv", na.strings=c("","NA") )

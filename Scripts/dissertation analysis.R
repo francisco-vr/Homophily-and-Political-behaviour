@@ -28,7 +28,7 @@ E1Agree <-agree%>%
   stat_boxplot(geom ='errorbar', width = 0.05) +
   geom_boxplot() +
   scale_fill_manual(values = wes_palette(n=3, name="Darjeeling1")) +
-  labs(title = "Experimento N°1 revisado: Ira por cercanía social en \n subsección personas que creen que en Chile se violaron DDHH",
+  labs(title = "Experimento N°1 revisado: Ira por cercanía social en \n subsección personas que creen que en Chile \n se violaron DDHH durante el Estallido Social",
        x = "Tratamiento", y = "Nivel de ira (Max 7)",
        caption = "Fuente: Elaboración propia") +
   geom_text(data = data.frame(x = 1.99323459079714, y = 7.06367300320391, 
@@ -84,6 +84,9 @@ E1AgreeDigit <-ggplot(data = agree, mapping = aes(x = E1Treat, y = E1, fill = E1
 PlotE1Agree <-(E1Agree | E1AgreeHomo / E1AgreeDigit)
 
 PlotE1Agree
+
+ggsave(PlotE1Agree, filename = "Results/Plots/E1Agree.png",
+       dpi = 400, width = 13, height = 10)
 
 ## Experiment 1 - Disagree persons
 
@@ -150,6 +153,9 @@ E1DisagreeDigit <-ggplot(data = disagree, mapping = aes(x = E1Treat, y = E1, fil
 PlotE1Disagree <-(E1Disagree | E1DisagreeHomo / E1DisagreeDigit)
 
 PlotE1Disagree
+
+ggsave(PlotE1Disagree, filename = "Results/Plots/E1Disagree.png",
+       dpi = 400, width = 13, height = 10)
 
 ## Experiment 2 - Agree
 
