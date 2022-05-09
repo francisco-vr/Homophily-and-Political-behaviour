@@ -7,6 +7,7 @@
 ########################################################################################################
 
 #Load Packages
+remotes::install_github("mattcowgill/ggannotate")
 
 ipak <- function(pkg){
   new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
@@ -19,8 +20,10 @@ ipak <- function(pkg){
 packages <- c("tidyverse","dplyr","haven","ggplot2","readxl","summarytools", "patchwork","stringr",
               "tidyr","kableExtra","psych", "MASS", "foreign", "data.table","gtools","lubridate","AER",
               "xtable","pBrackets","Hmisc","ri","ggpubr", "stargazer", "Rmisc","wesanderson", "gridExtra","ggmosaic",
-              "vcd", "plyr")
+              "vcd", "plyr", "ggannotate","scales")
 ipak(packages)
+
+
 
 
 
@@ -298,7 +301,7 @@ thesis$E4Sad<-as.numeric(thesis$E3Sad)
 
 ## Create new data frame
 
-finalDF <-dplyr::select(thesis,end_4:GenRecod,ideologia:E4Sad)
+finalDF <-dplyr::select(thesis,PosPol_1:PosPol_3,end_4:GenRecod,ideologia:E4Sad)
 
 
 
