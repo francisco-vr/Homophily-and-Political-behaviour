@@ -444,6 +444,22 @@ E2Digit<-df%>%
 
 xtable(E2Digit)
 
+##Regression Experiment 3
+
+df$SC0 <-as.numeric(df$SC0)
+
+#with balanced variables
+
+Reg3 <-glm(SC0 ~ E2Treat + HomoIndex + DigitIndex, data = df)
+summary(Reg3)
+stargazer::stargazer(Reg3)
+
+
+## with no-balanced variables
+
+Reg3No <-glm(SC0 ~ E2Treat + HomoIndex + DigitIndex + AgeRecod + EducRec + IncomeRecod + GenRecod + ideologia,
+             data = df)
+
 
 ## Experiment 4 ##
 
